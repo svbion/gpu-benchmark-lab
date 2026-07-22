@@ -100,14 +100,26 @@ placeholder_patterns = [
     r'Add GitHub profile URL',
     r'Add professional contact email',
     r'example\.com',
+    r'<YOUR_USERNAME>',
+    r'github\.com/placeholder',
+    r'href=["\']#["\']',
+    r'href=["\']\s*["\']',
+    r'site\.repository_url',
+    r'site\.profile\.(website|linkedin|email)_url',
 ]
-for p in md_files + [root / 'index.html']:
+for p in md_files + [root / 'index.html', root / '404.html', root / '_config.yml']:
     if not p.exists():
         continue
     text = p.read_text(encoding='utf-8')
     for pattern in placeholder_patterns:
         if re.search(pattern, text, re.I):
             errors.append(f'{p.relative_to(root)}: placeholder text remains: {pattern}')
+
+index_text = (root / 'index.html').read_text(encoding='utf-8')
+if 'href="https://github.com/svbion/gpu-benchmark-lab"' not in index_text:
+    errors.append('index.html: repository link must be exactly https://github.com/svbion/gpu-benchmark-lab')
+if '<link rel="canonical" href="https://svbion.github.io/gpu-benchmark-lab/">' not in index_text:
+    errors.append('index.html: canonical URL must be exactly https://svbion.github.io/gpu-benchmark-lab/')
 
 pdfs = sorted((root / 'docs' / 'reports' / 'pdf').glob('*.pdf'))
 if len(pdfs) != 5:

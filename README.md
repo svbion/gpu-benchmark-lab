@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/github/license/svbion/gpu-benchmark-lab?style=for-the-badge)](LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/svbion/gpu-benchmark-lab?style=for-the-badge)](https://github.com/svbion/gpu-benchmark-lab/commits/main)
 [![Documentation](https://img.shields.io/badge/docs-launch%20candidate-76ff03?style=for-the-badge)](docs/RELEASE_CANDIDATE_AUDIT.md)
-[![GitHub Pages](https://img.shields.io/badge/pages-ready-37d7ff?style=for-the-badge)](index.html)
+[![GitHub Pages](https://img.shields.io/badge/pages-ready-37d7ff?style=for-the-badge)](https://svbion.github.io/gpu-benchmark-lab/)
 [![Markdown Quality](https://img.shields.io/badge/markdown-validated-success?style=for-the-badge)](scripts/validate_docs.py)
 
 ## Senior AI Infrastructure Engineering Portfolio
@@ -22,7 +22,7 @@ If you have only a few minutes, review these files in order:
 4. [Benchmark results](docs/BENCHMARK_RESULTS.md)
 5. [GPUValidator overview](docs/GPUVALIDATOR_OVERVIEW.md)
 6. [Launch release notes](docs/releases/v1.0.0.md)
-7. [Portfolio landing page](index.html)
+7. [Portfolio landing page](https://svbion.github.io/gpu-benchmark-lab/)
 
 ## 90-Second Executive Summary
 
@@ -92,7 +92,7 @@ Source note: the included text artifact is labeled as a redacted real-format fix
 | NVIDIA / AI compute interviewer | [Benchmark methodology](docs/BENCHMARK_METHODOLOGY.md), [NCCL](docs/NCCL.md), [Technical decisions](docs/TECHNICAL_DECISIONS.md), [Interview guide](docs/INTERVIEW_GUIDE.md) |
 | Enterprise customer | [Executive summary](docs/reports/EXECUTIVE_SUMMARY.md), [Customer validation report](docs/reports/CUSTOMER_VALIDATION_REPORT.md), [Reports catalog](docs/reports/README.md) |
 | Investor / acquirer | [GPUValidator overview](docs/GPUVALIDATOR_OVERVIEW.md), [System architecture](docs/SYSTEM_ARCHITECTURE.md), [Roadmap](ROADMAP.md) |
-| Portfolio viewer | [GitHub Pages landing page](index.html), [Demo guide](docs/DEMO_GUIDE.md), [Video walkthrough script](docs/VIDEO_SCRIPT.md) |
+| Portfolio viewer | [GitHub Pages landing page](https://svbion.github.io/gpu-benchmark-lab/), [Demo guide](docs/DEMO_GUIDE.md), [Video walkthrough script](docs/VIDEO_SCRIPT.md) |
 | Contributor | [Contributing](CONTRIBUTING.md), [Security](SECURITY.md), [Discussions guide](docs/DISCUSSIONS.md) |
 
 ## Public Evidence Flow
@@ -146,7 +146,7 @@ No benchmark metrics are invented. Numeric rows appear only where the included f
 | [Reports](docs/reports/README.md) | Executive/customer/management report examples and regenerated PDFs |
 | [Launch candidate audit](docs/RELEASE_CANDIDATE_AUDIT.md) | IP, messaging, link, image, and publication checks |
 | [Releases page](RELEASES.md) | Professional release index and v1.0.0 summary |
-| [Landing page](index.html) | GitHub Pages-ready public case study |
+| [Landing page](https://svbion.github.io/gpu-benchmark-lab/) | GitHub Pages-ready public case study |
 
 ## Validation
 

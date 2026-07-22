@@ -11,11 +11,11 @@ license_name: MIT
 release_version: v1.0.0
 profile:
   name: Sabion P. Frazier
-  website_label: Configured in _config.yml
-  website_url: '#'
-  linkedin_label: Configured in _config.yml
-  linkedin_url: '#'
+  website_label: GPU Benchmark Lab
+  website_url: https://svbion.github.io/gpu-benchmark-lab/
+  linkedin_label: Not published
+  linkedin_url: https://github.com/svbion/gpu-benchmark-lab
   github_label: svbion
   github_url: https://github.com/svbion
-  email_label: Configured in _config.yml
-  email_url: '#'
+  email_label: Repository contact
+  email_url: https://github.com/svbion/gpu-benchmark-lab/issues
