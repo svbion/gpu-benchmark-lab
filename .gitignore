@@ -39,3 +39,21 @@ mermaid-output/
 
 # Keep generated public PDFs tracked intentionally.
 !docs/reports/pdf/*.pdf
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Generated documentation cache
+.cache-docs/
+
+# macOS
+.DS_Store
+
+# Node
+node_modules/
+
+# IDE
+.vscode/
+.idea/
