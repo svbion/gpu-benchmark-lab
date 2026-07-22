@@ -2,7 +2,6 @@
 
 > Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
-
 ## Scope
 
 This document explains the public benchmark-lab setup at an engineering-method level. It does not document proprietary deployment, application, automation, or agent internals.
@@ -37,4 +36,4 @@ This document explains the public benchmark-lab setup at an engineering-method l
 
 ## Public Visuals
 
-Production product screenshots were removed for RC1. Public visuals are conceptual placeholders under `assets/public/` and are safe for portfolio use.
+Production product screenshots were removed for LC1. Public visuals are conceptual placeholders under `assets/public/` and are safe for portfolio use.

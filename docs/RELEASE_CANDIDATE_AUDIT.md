@@ -1,11 +1,10 @@
-# Executive Release Candidate 1 Audit
+# Launch Candidate 1 Audit
 
 > Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
-
 ## Review Perspectives
 
-This RC1 pass reviewed the repository as:
+This LC1 pass reviewed the repository as:
 
 1. An NVIDIA Senior AI Compute Engineering hiring manager.
 2. An enterprise customer evaluating technical capability.
@@ -13,7 +12,7 @@ This RC1 pass reviewed the repository as:
 
 ## IP Review Findings and Actions
 
-| Risk area | Finding | RC1 action |
+| Risk area | Finding | LC1 action |
 | :--- | :--- | :--- |
 | Production screenshots | Existing images exposed proprietary UI surfaces, user names, cluster labels, status panels, product navigation, and implementation-adjacent workflows | Removed tracked production PNG screenshots and replaced docs with public-safe conceptual SVG visuals |
 | GPUValidator implementation | Several docs referenced product areas too closely | Reframed GPUValidator as proprietary software and removed implementation-facing descriptions |
@@ -55,4 +54,4 @@ The script checks internal links, image references, Mermaid fence balance, headi
 
 ## Publication Readiness Notes
 
-RC1 is suitable for final human review. Remaining publication questions are whether to regenerate PDFs from the updated Markdown and whether to add any newly approved raw evidence.
+LC1 is suitable for final human review. Remaining publication questions are whether to regenerate PDFs from the updated Markdown and whether to add any newly approved raw evidence.

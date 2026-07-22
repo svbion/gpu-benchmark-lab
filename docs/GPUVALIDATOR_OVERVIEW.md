@@ -2,7 +2,6 @@
 
 > Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
-
 ## What GPUValidator Is
 
 GPUValidator is proprietary software focused on GPU infrastructure validation, evidence organization, and enterprise reporting workflows for AI compute environments.

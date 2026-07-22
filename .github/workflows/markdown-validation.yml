@@ -1,0 +1,25 @@
+name: Markdown validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Markdownlint
+        run: npx --yes markdownlint-cli2 "**/*.md" "#node_modules"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install PDF validation dependency
+        run: python3 -m pip install pypdf
+      - name: Repository documentation validation
+        run: python3 scripts/validate_docs.py

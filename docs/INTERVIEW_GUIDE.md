@@ -2,7 +2,6 @@
 
 > Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
-
 ## Elevator Pitch
 
 I engineered a public-safe GPU benchmarking and validation case study around a RunPod A100 SXM environment. The work shows how I validate Linux GPU infrastructure, reason about CUDA/NCCL, preserve evidence, interpret benchmark output, and translate technical findings into executive and customer-facing reports while protecting proprietary platform IP.

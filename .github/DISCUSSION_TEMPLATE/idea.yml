@@ -1,0 +1,10 @@
+title: "Idea: "
+labels: [idea]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Public-safe idea
+      description: Describe a future documentation or methodology improvement.
+    validations:
+      required: true

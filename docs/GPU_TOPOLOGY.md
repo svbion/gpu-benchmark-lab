@@ -2,7 +2,6 @@
 
 > Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
-
 ## Purpose
 
 GPU topology affects collective communication performance, NUMA behavior, peer-to-peer paths, and expected NCCL bandwidth. Topology review is part of enterprise GPU acceptance because not all multi-GPU nodes behave the same.

@@ -1,0 +1,22 @@
+name: Link validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install PDF validation dependency
+        run: python3 -m pip install pypdf
+      - name: Validate internal links and images
+        run: python3 scripts/validate_docs.py
+      - name: Validate GitHub Pages local references
+        run: python3 scripts/validate_pages.py

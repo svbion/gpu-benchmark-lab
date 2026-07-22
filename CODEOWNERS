@@ -1,0 +1,14 @@
+# Launch candidate documentation ownership
+* @svbion
+
+# Public landing page and repository governance
+/index.html @svbion
+/style.css @svbion
+/.github/ @svbion
+/SECURITY.md @svbion
+/CODEOWNERS @svbion
+
+# Public evidence and reports
+/evidence/ @svbion
+/docs/reports/ @svbion
+/docs/releases/ @svbion

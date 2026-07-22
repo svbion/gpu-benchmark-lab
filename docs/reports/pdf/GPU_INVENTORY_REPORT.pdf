@@ -1,46 +1,74 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+<<
+/Contents 8 0 R /MediaBox [ 0 0 612 792 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 5 0 obj
-<< /Length 473 >>
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
+endobj
+6 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20260722092630-04'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260722092630-04'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (Gpu Inventory Report) /Trapped /False
+>>
+endobj
+7 0 obj
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 1634
+>>
 stream
-BT
-/F1 18 Tf
-72 760 Td
-(GPU Inventory Report) Tj
-/F1 10 Tf
-0 -16 Td
-(Public portfolio PDF rendering from sanitized documentation.) Tj
-0 -16 Td
-(GPUValidator remains a proprietary internal platform and is not included.) Tj
-0 -16 Td
-(Raw benchmark metrics are included only when linked to evidence files.) Tj
-0 -16 Td
-(Primary evidence: evidence/raw/nccl/redacted-real-nccl-all-reduce.txt) Tj
-0 -16 Td
-(Environment: RunPod, single node, 4 x NVIDIA A100 SXM, CUDA/NCCL.) Tj
-ET
-endstream
+Gatm;>BB'f&:WeDlsn`Ma0Oe7I3WIOREVI>;F3Emk_lYKW3mon8`nH.hj"W\-cLX83m8l%&psTNgKakEIRs&h.fo'ME;PIl$"11A69P[^-[;!f^(/6`Ae]J=,UDm]quOP+I%'iX(d(#SBh6#aP`R-p]c<\!d`G!N--?^JUeZ(E36<EaHR+U@Ga?7lkN>okP\VnRdQ<ie8nn/)bl3:KO"gFm.U)HpIbn3BO&I^)cE%[L":[MB'IN]%FG@e$66eV`I-3p$e'E8c1QW0c.#,g(0dO"7R_qcCapS:a`TVc<qVaC6O%0+.IHNbJ1JD$Qn\K-Qg\?9i>gEe?Tt#\1_dT]_R5;PR$1(8$HsJ0GRV:b3X%SD1!A9^*Eit+$6HSUejf2/#h%1!Y_MZ*R%X]jK/i/Lh(0nIiAp=UBboE?W-.@?pOI#3)F3CX]EX5@u:U`HeX]Y0a\[JHU"&-pWX:RBZ;ZQ3b[&ULKhk=IJ/aS4+m_K]n&%+m7REG>p6G/l@R;LJG<gY%(SfdKc[$kPA+&O_]49&$`i[)K$XL9YO<b.2(\'qt24lkCSV)*1L-dDps10"`+X,U+*f:>5UDMT+IRTU-(djGiCG_V7<(\D*R&.1m\RWE1D$3Q2]TT*)Ok</JK_Kq:Z&23F%'37hTqC!6eq]f0#/^c`o-:*=bK+PeOQ^,h?Us=Zelc3$qak3@OVSm"poQB(N#O`B4-h7%P"?m&,<H6ijaFSIcpkER*-?`6Sql2I[KDj3*!ICn+QHm&9ODu?k6pBj+iHsQ?jdFQ-.i?3K/a[D3V,27;3<Y<p7EHM@o;ukfXq\mcLg!e9[1%a;79c&?U.NC6*ti:.!9po=HoUW;UTA3Gc<(dWI0DlMfG23$W"OD;XJ9mp+oWTU!n1=:WuPB_$9jW5CLD_31NH?b&Dr80hg^3Y@)e>j>%f3&F#s<A[&@5/]:c#Cob0sWF64*]hVOTZQbV>55Ja-DVB#De_a80VNMNlmFp0nS("Yg_J,OY5lRi\)UBm8_Q)2Ak`ABsIa'*9Jo?NaCKA@fZW)'J==o9DhY>7aE`^Y\7)J!KnZ8F.?/I_V7aK!7#L2=-YiSMcK&Z044EIk5&gBqd4p:/0T58n:Yek?co?>sR!/*E1#*Au=SmHj#l0M4C_]p@WGal-[Ob,REgF<U%JglTmCE_dA)Bo(Y?]"U8SR+iX_gBk]-<\j'R!Y,g0h7CC*[B:0]<m8F8RDW$r&)2<a]OL0K%35YnT,'sdD;8gQ[J&ao`Yee#Kc.ab&I[RY\?]cXpDR,7Wjm^Ba3=*ae?R5kP8u$W-YRtWf,]H"H5da*b+e2<-*e2E*:RDpg5(FOZ!BZD4*q*-gbJeX.M1S_TFM'sWKD&imP;ukP[(+I5h/A8mIFsH*%rpD+'e&UM!Elpk%9du02tZKoUL5Hf?NAH'E)M-anSKS,7csER:A05:"2t`*ZnUJ?5\:GK<>]u96#?Ul\Pi[7h`Gc[S?O6KjqRg/DPDhTddLBp'a+*#630%J%+;F5NW1`d(\p(VItY_*j2+UQ;MM8EpP`Fc.d5Qc>ak@>L=%))^)\MeoJOB@11_u^+,&3#ELj'.K#l=p98NWn!"jIJ$X@-qFA'nm8o<[c#!-bG1/N0Ujol>IAC9?&#kLoq>~>endstream
 endobj
 xref
-0 6
-0000000000 65535 f
-0000000009 00000 n
-0000000058 00000 n
-0000000115 00000 n
-0000000241 00000 n
-0000000311 00000 n
-trailer << /Size 6 /Root 1 0 R >>
+0 9
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000514 00000 n 
+0000000582 00000 n 
+0000000869 00000 n 
+0000000928 00000 n 
+trailer
+<<
+/ID 
+[<48560dfd2db94b368b62fc50a523aca5><48560dfd2db94b368b62fc50a523aca5>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
 startxref
-835
+2653
 %%EOF

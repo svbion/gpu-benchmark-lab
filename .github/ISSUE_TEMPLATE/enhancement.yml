@@ -1,0 +1,24 @@
+name: Enhancement
+description: Propose a public-safe repository enhancement.
+title: "enhancement: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence availability
+      description: If this involves benchmarks, describe what public evidence exists. Do not include private evidence.
+    validations:
+      required: true

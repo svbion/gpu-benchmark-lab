@@ -1,0 +1,21 @@
+# GitHub Pages and publication variables for gpu-benchmark-lab.
+# Update these values before publishing under a different owner, repo, domain, or contact path.
+title: GPU Benchmark Lab
+description: Engineering an Enterprise GPU Benchmarking and Validation Environment
+repository_owner: svbion
+repository_name: gpu-benchmark-lab
+repository_slug: svbion/gpu-benchmark-lab
+repository_url: https://github.com/svbion/gpu-benchmark-lab
+pages_url: https://svbion.github.io/gpu-benchmark-lab/
+license_name: MIT
+release_version: v1.0.0
+profile:
+  name: Sabion P. Frazier
+  website_label: Configured in _config.yml
+  website_url: '#'
+  linkedin_label: Configured in _config.yml
+  linkedin_url: '#'
+  github_label: svbion
+  github_url: https://github.com/svbion
+  email_label: Configured in _config.yml
+  email_url: '#'

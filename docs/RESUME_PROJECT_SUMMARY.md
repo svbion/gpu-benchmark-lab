@@ -2,7 +2,6 @@
 
 > Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
-
 ## Professional Summary
 
 GPU Benchmark Lab is a public portfolio case study showing how enterprise AI compute infrastructure can be validated, benchmarked, documented, and explained to technical and executive audiences.

@@ -1,0 +1,31 @@
+name: Documentation Improvement
+description: Suggest a public-safe documentation improvement.
+title: "docs: "
+labels: [documentation]
+body:
+  - type: textarea
+    id: page
+    attributes:
+      label: Page or section
+      description: Which document should change?
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: Suggested improvement
+      description: What would make it clearer, safer, or more useful?
+    validations:
+      required: true
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Primary audience
+      options:
+        - Recruiter
+        - NVIDIA / AI compute reviewer
+        - Enterprise customer
+        - Investor / acquirer
+        - General reader
+    validations:
+      required: true

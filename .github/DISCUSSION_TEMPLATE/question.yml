@@ -1,0 +1,12 @@
+title: "Question: "
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: "Ask public-safe questions only. Do not request proprietary GPUValidator internals."
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true

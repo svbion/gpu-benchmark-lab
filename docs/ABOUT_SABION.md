@@ -2,7 +2,6 @@
 
 > Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
-
 ## Professional Biography
 
 Sabion P. Frazier is an AI infrastructure and enterprise engineering practitioner focused on Linux systems, GPU infrastructure, HPC concepts, distributed AI workloads, and evidence-driven technical documentation.
@@ -31,8 +30,7 @@ Build credible, secure, and explainable AI compute infrastructure workflows that
 
 ## Certifications
 
-- Add current certifications here.
-- Add in-progress certifications here.
+Certification entries are configured outside this launch candidate and should be added only when verified.
 
 ## Specialties
 
@@ -52,11 +50,15 @@ Linux, HPC, AI infrastructure, GPU validation, performance engineering, system d
 - Evidence provenance for enterprise infrastructure acceptance.
 - Benchmark interpretation for training and inference environments.
 
-## Contact
+## Contact Variables
 
-- Website: Add public website URL.
-- LinkedIn: Add LinkedIn URL.
-- GitHub: Add GitHub profile URL.
-- Email: Add professional contact email.
+Public contact destinations are intentionally configurable in [_config.yml](../_config.yml):
 
-No personal address or phone number should be published here.
+| Contact field | Configuration variable |
+| :--- | :--- |
+| Website | `profile.website_url` |
+| LinkedIn | `profile.linkedin_url` |
+| GitHub | `profile.github_url` |
+| Email | `profile.email_url` |
+
+Do not publish personal addresses or phone numbers.

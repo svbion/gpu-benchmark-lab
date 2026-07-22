@@ -1,15 +1,32 @@
 # Engineering an Enterprise GPU Benchmarking and Validation Environment
 
+[![License](https://img.shields.io/github/license/svbion/gpu-benchmark-lab?style=for-the-badge)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/svbion/gpu-benchmark-lab?style=for-the-badge)](https://github.com/svbion/gpu-benchmark-lab/commits/main)
+[![Documentation](https://img.shields.io/badge/docs-launch%20candidate-76ff03?style=for-the-badge)](docs/RELEASE_CANDIDATE_AUDIT.md)
+[![GitHub Pages](https://img.shields.io/badge/pages-ready-37d7ff?style=for-the-badge)](index.html)
+[![Markdown Quality](https://img.shields.io/badge/markdown-validated-success?style=for-the-badge)](scripts/validate_docs.py)
+
 ## Senior AI Infrastructure Engineering Portfolio
 
 **RunPod A100 SXM lab setup, Linux GPU validation, CUDA/NCCL benchmark methodology, evidence discipline, and executive-ready reporting.**
 
 > Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
+## First-Time Visitor Path
+
+If you have only a few minutes, review these files in order:
+
+1. [90-second summary](#90-second-executive-summary)
+2. [Skills matrix](docs/SKILLS_MATRIX.md)
+3. [Benchmark methodology](docs/BENCHMARK_METHODOLOGY.md)
+4. [Benchmark results](docs/BENCHMARK_RESULTS.md)
+5. [GPUValidator overview](docs/GPUVALIDATOR_OVERVIEW.md)
+6. [Launch release notes](docs/releases/v1.0.0.md)
+7. [Portfolio landing page](index.html)
 
 ## 90-Second Executive Summary
 
-GPU Benchmark Lab is a public release-candidate portfolio repository showing how an enterprise GPU validation environment was engineered, exercised, documented, and communicated without exposing proprietary platform implementation.
+GPU Benchmark Lab is a launch-candidate portfolio repository showing how an enterprise GPU validation environment was engineered, exercised, documented, and communicated without exposing proprietary platform implementation.
 
 The repository demonstrates:
 
@@ -19,6 +36,20 @@ The repository demonstrates:
 - NCCL collective benchmark methodology with numeric claims limited to included evidence.
 - Evidence-to-report translation for technical, customer, management, and interview audiences.
 - Clear separation between public methodology and the private GPUValidator platform.
+
+## What This Repository Is
+
+A public engineering case study for:
+
+- Building a controlled GPU benchmark lab.
+- Capturing safe evidence from a Linux GPU environment.
+- Explaining CUDA/NCCL benchmark methodology.
+- Turning technical evidence into customer and executive documentation.
+- Demonstrating professional judgment around IP protection.
+
+## What This Repository Is Not
+
+This repository is not GPUValidator source code, a production deployment guide, a customer certification, or a disclosure of proprietary implementation. It does not include private APIs, schemas, auth/RBAC design, agent protocols, message formats, secrets, private URLs, customer data, or production screenshots.
 
 ## Recruiter Snapshot
 
@@ -33,20 +64,8 @@ The repository demonstrates:
 | Performance Engineering | Message-size scaling, bandwidth interpretation, correctness checks |
 | Enterprise Reporting | Executive summaries, customer validation reports, management narratives |
 | System Design | Public/private boundary design and evidence pipeline architecture |
-| Documentation | Publication-ready docs, validation script, links, image checks, release audit trail |
+| Documentation | Launch-ready docs, validation script, links, image checks, release audit trail |
 | AI Infrastructure | Practical validation workflow for multi-GPU AI compute readiness |
-
-## Why This Project Exists
-
-Enterprise AI infrastructure teams cannot rely on screenshots or a single `nvidia-smi` output to decide whether GPU capacity is ready for training, inference, or customer acceptance. They need a repeatable way to answer:
-
-- What hardware and runtime stack are visible?
-- Which benchmark was run, with what scope and parameters?
-- Is the evidence preserved and reviewable?
-- Which claims are supported by raw output, and which are only planned methodology?
-- Can engineering findings be translated into executive and customer language?
-
-This repository tells that story as a public case study: build a controlled GPU benchmark lab, collect bounded evidence, explain the methodology, preserve proprietary boundaries, and produce professional documentation.
 
 ## Environment Summary
 
@@ -61,7 +80,7 @@ This repository tells that story as a public case study: build a controlled GPU 
 | CUDA | CUDA 12.8 in sanitized NCCL fixture header |
 | NCCL | NCCL 2.25.1+cuda12.8 in sanitized NCCL fixture header |
 | Workload scope | Single-node, multi-GPU collective communication validation |
-| Publication status | Executive Release Candidate 1 documentation package |
+| Publication status | Launch Candidate 1 / v1.0.0 documentation package |
 
 Source note: the included text artifact is labeled as a redacted real-format fixture. It preserves NCCL Tests output structure and selected non-sensitive values, but it must not be represented as customer evidence.
 
@@ -74,6 +93,7 @@ Source note: the included text artifact is labeled as a redacted real-format fix
 | Enterprise customer | [Executive summary](docs/reports/EXECUTIVE_SUMMARY.md), [Customer validation report](docs/reports/CUSTOMER_VALIDATION_REPORT.md), [Reports catalog](docs/reports/README.md) |
 | Investor / acquirer | [GPUValidator overview](docs/GPUVALIDATOR_OVERVIEW.md), [System architecture](docs/SYSTEM_ARCHITECTURE.md), [Roadmap](ROADMAP.md) |
 | Portfolio viewer | [GitHub Pages landing page](index.html), [Demo guide](docs/DEMO_GUIDE.md), [Video walkthrough script](docs/VIDEO_SCRIPT.md) |
+| Contributor | [Contributing](CONTRIBUTING.md), [Security](SECURITY.md), [Discussions guide](docs/DISCUSSIONS.md) |
 
 ## Public Evidence Flow
 
@@ -116,25 +136,33 @@ GPUValidator is mentioned only as proprietary software that supports GPU infrast
 
 No benchmark metrics are invented. Numeric rows appear only where the included fixture contains them, and the fixture limitations are stated.
 
-## Key Accomplishments
-
-- Built a public-safe documentation package around an enterprise GPU validation workflow.
-- Preserved an explicit IP boundary for proprietary GPUValidator software.
-- Documented A100 SXM, CUDA, NCCL, driver, and collective benchmark concepts in recruiter-readable language.
-- Produced executive, customer, management, technical, resume, and interview materials from a single evidence narrative.
-- Replaced production application screenshots with public-safe conceptual visuals for RC1.
-- Added release-audit documentation and validation checks for links, images, Mermaid fences, headings, and sensitive-text patterns.
-
-## Evidence and Artifacts
+## Launch Candidate Contents
 
 | Artifact | Purpose |
 | :--- | :--- |
 | [Sanitized NCCL AllReduce fixture](evidence/raw/nccl/redacted-real-nccl-all-reduce.txt) | Public-safe example of NCCL Tests output structure |
 | [Benchmark results](docs/BENCHMARK_RESULTS.md) | Evidence-linked interpretation and limitations |
 | [System architecture](docs/SYSTEM_ARCHITECTURE.md) | Public architecture and proprietary boundary diagrams |
-| [Reports](docs/reports/README.md) | Executive/customer/management report examples |
-| [Release candidate audit](docs/RELEASE_CANDIDATE_AUDIT.md) | IP, messaging, link, image, and publication checks |
+| [Reports](docs/reports/README.md) | Executive/customer/management report examples and regenerated PDFs |
+| [Launch candidate audit](docs/RELEASE_CANDIDATE_AUDIT.md) | IP, messaging, link, image, and publication checks |
+| [Releases page](RELEASES.md) | Professional release index and v1.0.0 summary |
 | [Landing page](index.html) | GitHub Pages-ready public case study |
+
+## Validation
+
+Local validation command:
+
+```bash
+python3 scripts/validate_docs.py
+```
+
+Optional PDF regeneration command:
+
+```bash
+python3 scripts/render_report_pdfs.py
+```
+
+GitHub Actions are included for Markdown validation, Mermaid validation, and link validation.
 
 ## Resume Highlights
 
@@ -144,6 +172,6 @@ No benchmark metrics are invented. Numeric rows appear only where the included f
 
 More: [Resume bullets](docs/RESUME_BULLETS.md) and [Resume project summary](docs/RESUME_PROJECT_SUMMARY.md).
 
-## Publication Status
+## Launch Status
 
-This branch is prepared as an Executive Release Candidate 1 review package. Before making the repository public, review [Release candidate audit](docs/RELEASE_CANDIDATE_AUDIT.md) and confirm whether any additional screenshots, PDFs, or raw outputs require customer/provider approval.
+This repository is prepared as Launch Candidate 1 for public GitHub publication. Review [Launch release notes](docs/releases/v1.0.0.md), [Security](SECURITY.md), and [Release candidate audit](docs/RELEASE_CANDIDATE_AUDIT.md) before making the repository public.

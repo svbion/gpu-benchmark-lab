@@ -1,0 +1,21 @@
+name: Question
+description: Ask a public-safe question about the repository.
+title: "question: "
+labels: [question]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For open-ended discussion, GitHub Discussions may be a better fit. Do not request proprietary GPUValidator internals.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would you like clarified?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Link to the relevant public doc if possible.

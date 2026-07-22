@@ -70,7 +70,7 @@ for html in [root / 'index.html']:
     if html.exists():
         text = html.read_text(encoding='utf-8')
         for src in re.findall(r'(?:src|href)="([^"]+)"', text):
-            if src.startswith(('http://', 'https://', 'mailto:')) or src.startswith('#'):
+            if src.startswith(('http://', 'https://', 'mailto:')) or src.startswith('#') or '{{' in src:
                 continue
             path = (html.parent / src).resolve()
             if not path.exists():
@@ -93,6 +93,39 @@ for p in list(md_files) + [root/'index.html', root/'style.css']:
 for img in (root/'assets/public').glob('*'):
     if img.stat().st_size == 0:
         errors.append(f'{img.relative_to(root)}: empty public asset')
+
+placeholder_patterns = [
+    r'Add public .*URL',
+    r'Add LinkedIn URL',
+    r'Add GitHub profile URL',
+    r'Add professional contact email',
+    r'example\.com',
+]
+for p in md_files + [root / 'index.html']:
+    if not p.exists():
+        continue
+    text = p.read_text(encoding='utf-8')
+    for pattern in placeholder_patterns:
+        if re.search(pattern, text, re.I):
+            errors.append(f'{p.relative_to(root)}: placeholder text remains: {pattern}')
+
+pdfs = sorted((root / 'docs' / 'reports' / 'pdf').glob('*.pdf'))
+if len(pdfs) != 5:
+    errors.append(f'Expected 5 report PDFs, found {len(pdfs)}')
+for pdf in pdfs:
+    if pdf.stat().st_size < 1000:
+        errors.append(f'{pdf.relative_to(root)}: PDF is unexpectedly small')
+try:
+    from pypdf import PdfReader
+    for pdf in pdfs:
+        reader = PdfReader(str(pdf))
+        if len(reader.pages) < 1:
+            errors.append(f'{pdf.relative_to(root)}: no pages')
+        text = '\n'.join(page.extract_text() or '' for page in reader.pages)
+        if 'GPUValidator remains proprietary' not in text and 'Public release boundary' not in text:
+            errors.append(f'{pdf.relative_to(root)}: expected public boundary text not extracted')
+except Exception as exc:
+    warnings.append(f'PDF text extraction skipped: {exc}')
 
 if warnings:
     print('Warnings:')
