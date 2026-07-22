@@ -1,23 +1,24 @@
 # GPU Topology
 
-> Evidence policy: this public repository contains documentation, sanitized evidence references, screenshots, and report examples only. GPUValidator is a proprietary internal enterprise platform and remains private. No GPUValidator source code, backend, frontend, authentication, agent implementation, APIs, business logic, or enterprise architecture is included.
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
 
 ## Purpose
 
-GPU topology explains how GPUs are connected within the node and affects expected communication behavior.
+GPU topology affects collective communication performance, NUMA behavior, peer-to-peer paths, and expected NCCL bandwidth. Topology review is part of enterprise GPU acceptance because not all multi-GPU nodes behave the same.
 
 ## Evidence Status
 
-This public repository includes screenshots and NCCL AllReduce output, but it does not include a raw sanitized `nvidia-smi topo -m` text artifact. Therefore no specific NVLink, PCIe, NUMA, or fabric topology matrix is claimed here.
+This public RC1 does not publish a raw `nvidia-smi topo -m` matrix. Therefore no specific NVLink, PCIe, NUMA, InfiniBand, or fabric topology matrix is claimed here.
 
-## Recommended Evidence
+## Recommended Evidence for Future Publication
 
-When approved for public release, add:
+- Sanitized `nvidia-smi topo -m` output.
+- GPU count/model summary with UUIDs removed.
+- Driver/runtime versions.
+- NCCL command and output provenance.
+- Clear limitations if topology tools are unavailable or redaction prevents publication.
 
-```bash
-nvidia-smi topo -m > evidence/raw/gpu/topology.txt
-nvidia-smi nvlink --status > evidence/raw/gpu/nvlink-status.txt
-```
+## Public Interpretation Rule
 
-Remove or redact host identifiers as needed, then link those files from this document.
+Discuss topology as methodology unless approved raw topology evidence is present. Do not infer interconnect details from GPU model alone.

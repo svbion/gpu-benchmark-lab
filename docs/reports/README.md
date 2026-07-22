@@ -1,20 +1,22 @@
 # Reports
 
-> Evidence policy: this public repository contains documentation, sanitized evidence references, screenshots, and report examples only. GPUValidator is a proprietary internal enterprise platform and remains private. No GPUValidator source code, backend, frontend, authentication, agent implementation, APIs, business logic, or enterprise architecture is included.
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
-
-This directory documents report types generated from infrastructure and benchmark evidence. The PDF files in [pdf](pdf/) are public portfolio renderings from sanitized report narratives and do not include proprietary GPUValidator export code.
 
 ## Report Types
 
-- [Executive Summary](EXECUTIVE_SUMMARY.md)
-- [Infrastructure Report](INFRASTRUCTURE_REPORT.md)
-- [GPU Inventory Report](GPU_INVENTORY_REPORT.md)
-- [Customer Validation Report](CUSTOMER_VALIDATION_REPORT.md)
-- [Management Report](MANAGEMENT_REPORT.md)
+| Report | Audience | Purpose |
+| :--- | :--- | :--- |
+| [Executive Summary](EXECUTIVE_SUMMARY.md) | Leaders | Readiness, risk, and next actions |
+| [Infrastructure Report](INFRASTRUCTURE_REPORT.md) | Engineers | Environment, runtime evidence, methodology, limitations |
+| [GPU Inventory Report](GPU_INVENTORY_REPORT.md) | Ops / platform teams | GPU count/model/runtime inventory and gaps |
+| [Customer Validation Report](CUSTOMER_VALIDATION_REPORT.md) | Enterprise customers | Acceptance-style narrative and recommendations |
+| [Management Report](MANAGEMENT_REPORT.md) | Managers | Status, risks, investment priorities |
 
-## Screenshots
+## PDF Examples
 
-![Reports catalog](../../assets/screenshots/reports/reports-catalog.png)
+PDF examples are included in [pdf](pdf/). They are sanitized portfolio renderings, not proprietary GPUValidator source output.
 
-![NCCL results reference](../../assets/screenshots/reports/nccl-results-reference.png)
+## Visual Policy
+
+Production screenshots were removed for RC1. Public visuals are conceptual diagrams and placeholders designed for portfolio use.

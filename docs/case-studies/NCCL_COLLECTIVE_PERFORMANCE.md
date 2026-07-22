@@ -1,19 +1,20 @@
 # Case Study: NCCL Collective Performance
 
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
+
+
 ## Context
 
-NCCL collectives are foundational to distributed AI workloads.
+NCCL collectives provide a practical lens for distributed AI infrastructure validation.
 
 ## Challenge
 
-Explain multiple collective patterns while avoiding unsupported performance claims.
+The challenge was to explain performance concepts without inventing metrics for collectives without public output.
 
 ## Approach
 
-- Documented AllReduce with raw output.
-- Documented AllGather, ReduceScatter, Broadcast, Reduce, AllToAll, and SendRecv methodology without inventing missing metrics.
-- Mapped each collective to typical AI use cases.
+AllReduce fixture rows are quoted with limitations; other collectives are documented as methodology-only.
 
 ## Result
 
-The repository demonstrates both technical depth and evidence discipline.
+The case study demonstrates benchmark literacy, correctness awareness, and disciplined evidence handling.

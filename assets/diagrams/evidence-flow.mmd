@@ -1,5 +1,4 @@
 flowchart TD
-    RunPod --> NCCL
-    NCCL --> Benchmark
-    Benchmark --> Evidence
-    Evidence --> Documentation
+  A[Authorized GPU lab] --> B[Sanitized evidence]
+  B --> C[Technical analysis]
+  C --> D[Executive documentation]

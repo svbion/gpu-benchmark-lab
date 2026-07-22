@@ -1,20 +1,20 @@
 # Case Study: RunPod A100 Benchmark
 
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
+
+
 ## Context
 
-A RunPod single-node environment with four NVIDIA A100 SXM GPUs was used as the benchmark lab context.
+A bounded RunPod GPU lab was used to document single-node, multi-GPU validation methodology.
 
 ## Challenge
 
-Show credible GPU infrastructure validation without publishing proprietary application implementation.
+The challenge was to communicate real infrastructure engineering work without exposing private platform implementation or overstating evidence.
 
 ## Approach
 
-- Documented environment and hardware.
-- Preserved raw NCCL AllReduce output.
-- Captured workflow screenshots.
-- Built source-grounded public documentation.
+The public case study records environment scope, runtime evidence, NCCL command shape, fixture limitations, and reporting outputs.
 
 ## Result
 
-The public repository demonstrates cloud GPU deployment awareness, Linux/NVIDIA validation discipline, and benchmark evidence handling.
+The result is a portfolio artifact that signals practical GPU infrastructure experience and publication judgment.

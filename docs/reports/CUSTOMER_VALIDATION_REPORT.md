@@ -1,36 +1,37 @@
 # Customer Validation Report
 
-> Evidence policy: this public repository contains documentation, sanitized evidence references, screenshots, and report examples only. GPUValidator is a proprietary internal enterprise platform and remains private. No GPUValidator source code, backend, frontend, authentication, agent implementation, APIs, business logic, or enterprise architecture is included.
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
 
 ## Audience
 
-Customer acceptance and delivery teams
+Enterprise customers evaluating delivery capability.
 
 ## Purpose
 
-Translate technical evidence into acceptance posture and remediation language.
+Show how benchmark evidence becomes acceptance-oriented findings and recommendations.
 
 ## Evidence Inputs
 
-- Raw NCCL benchmark output when available.
-- GPU inventory screenshots.
-- Hardware validation screenshots.
-- Sanitized report examples.
-
-## Transformation Pattern
-
-```mermaid
-flowchart LR
-    A[Raw Evidence] --> B[Technical Interpretation]
-    B --> C[Risk/Readiness Language]
-    C --> D[Customer Validation Report]
-```
+- RunPod single-node, four-GPU A100 SXM class environment description.
+- Sanitized NCCL AllReduce fixture with driver, CUDA/NCCL, GPU count/model, command parameters, and selected rows.
+- Public-safe conceptual visuals instead of production screenshots.
+- Explicit limitations for unavailable or unpublished evidence.
 
 ## Public Example
 
-A portfolio PDF rendering is available in [pdf/CUSTOMER_VALIDATION_REPORT.pdf](pdf/CUSTOMER_VALIDATION_REPORT.pdf).
+A customer-ready validation narrative should state what was validated, what evidence supports the conclusion, what remains unverified, and what should happen before production acceptance.
+
+## Recommended Structure
+
+1. Executive summary.
+2. Environment and scope.
+3. Evidence reviewed.
+4. Benchmark methodology.
+5. Findings and limitations.
+6. Recommendations.
+7. Appendix with sanitized artifacts.
 
 ## Boundary
 
-This document explains report semantics and evidence mapping. It does not expose proprietary GPUValidator report-generation source code.
+This report template describes public methodology and communication style only. It does not include proprietary GPUValidator report-generation code or private customer evidence.

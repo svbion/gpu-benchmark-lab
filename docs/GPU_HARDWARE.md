@@ -1,37 +1,39 @@
 # GPU Hardware
 
-> Evidence policy: this public repository contains documentation, sanitized evidence references, screenshots, and report examples only. GPUValidator is a proprietary internal enterprise platform and remains private. No GPUValidator source code, backend, frontend, authentication, agent implementation, APIs, business logic, or enterprise architecture is included.
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
 
 ## Public Hardware Summary
 
-| Field | Value |
+| Field | Publicly documented value |
 | :--- | :--- |
-| GPU count | 4 |
-| GPU class | NVIDIA A100 SXM |
-| Raw evidence model string | NVIDIA A100-SXM4-80GB |
-| Deployment | RunPod single node |
-| Topology scope | Single-node multi-GPU |
+| Provider | RunPod |
+| Node scope | Single node |
+| GPU count | 4 in sanitized fixture header |
+| GPU model string | NVIDIA A100-SXM4-80GB |
+| Driver evidence | 580.126.16 in sanitized fixture header |
+| Topology evidence | Methodology documented; raw topology matrix not published |
 
 ## Evidence
 
-The included AllReduce output records:
+The included NCCL fixture header contains:
 
 ```text
 # GPUs: 4 x NVIDIA A100-SXM4-80GB
+# Driver Version: 580.126.16
 ```
 
 Source: [redacted-real-nccl-all-reduce.txt](../evidence/raw/nccl/redacted-real-nccl-all-reduce.txt).
 
 ## Engineering Relevance
 
-A100 SXM systems are used for high-throughput AI training and inference workloads where GPU-to-GPU communication can dominate application performance. A portfolio-quality validation workflow must therefore verify not only GPU presence, but communication behavior under representative collective operations.
+Hardware validation is not just inventory. For enterprise AI infrastructure, engineers need to verify visibility, runtime compatibility, topology assumptions, benchmark correctness, and evidence provenance before recommending acceptance.
 
 ## Inventory Checklist
 
-- GPU count visible in `nvidia-smi -L`
-- GPU model captured without exposing UUIDs
-- Driver version captured
-- CUDA runtime compatibility captured
-- Topology captured when safe to publish
-- NCCL communication validated with raw output evidence
+- GPU count and model recorded.
+- Driver version recorded.
+- CUDA/NCCL version linked to benchmark output.
+- GPU UUIDs and provider-specific identifiers redacted or withheld.
+- Topology evidence published only when approved.
+- Public statements distinguish evidence, methodology, and future work.

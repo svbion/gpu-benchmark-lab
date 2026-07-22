@@ -1,22 +1,22 @@
 # Contributing
 
-> Evidence policy: this public repository contains documentation, sanitized evidence references, screenshots, and report examples only. GPUValidator is a proprietary internal enterprise platform and remains private. No GPUValidator source code, backend, frontend, authentication, agent implementation, APIs, business logic, or enterprise architecture is included.
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
 
-This repository is a public engineering portfolio. Contributions should improve clarity, accuracy, validation, or presentation without exposing proprietary implementation details.
+This repository is public-facing documentation only. Contributions must strengthen the story of engineering an enterprise GPU benchmarking and validation environment while preserving IP boundaries.
 
 ## Rules
 
-- Do not add GPUValidator source code.
-- Do not add backend, frontend, authentication, validation, report-generation, benchmark-engine, API, or agent implementation details from GPUValidator.
-- Do not add secrets, tokens, private hostnames, GPU UUIDs, customer names, or cloud credentials.
-- Do not invent benchmark metrics.
-- Raw benchmark claims must link to a raw output file.
-- Screenshots must be supplied artifacts, not fabricated UI mockups.
+- Do not add GPUValidator source code or product internals.
+- Do not add API endpoints, database schemas, auth/RBAC design, agent protocol details, message formats, directory structures from the private platform, secrets, hostnames, tokens, UUIDs, private URLs, customer names, or production screenshots.
+- Do not invent benchmark results or imply that methodology-only benchmarks were executed.
+- Do not add raw provider/customer evidence unless it is explicitly approved for public release and sanitized.
+- Prefer high-level engineering descriptions tied to public evidence.
 
 ## Documentation Standards
 
-- Prefer short sections, tables, diagrams, and evidence links.
-- Explain the engineering decision, the operational risk, and the business meaning.
-- Use `GPUValidator` only as a high-level proprietary platform reference.
-- Keep public docs vendor-quality: readable, accurate, professional, and source-grounded.
+- Lead with the business problem, then explain the engineering method.
+- Separate facts, assumptions, limitations, and future work.
+- Link numeric claims to evidence.
+- Use consistent language: GPUValidator is proprietary software; this repository documents methodology, benchmarking, validation, and reporting.
+- Validate links and images with `python3 scripts/validate_docs.py` before committing.

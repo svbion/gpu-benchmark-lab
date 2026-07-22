@@ -1,26 +1,19 @@
 # Skills Matrix
 
-| Skill | Portfolio Evidence |
-| :--- | :--- |
-| Linux | RunPod host validation workflow and command evidence discipline |
-| GPU Infrastructure | A100 SXM inventory and benchmark lab setup |
-| NVIDIA GPUs | A100-SXM4-80GB raw evidence reference |
-| CUDA | CUDA 12.8 reference from NCCL output |
-| NCCL | Collective methodology and AllReduce output analysis |
-| Distributed Systems | Rank-based collective communication explanations |
-| RunPod | Cloud GPU environment setup documentation |
-| Python | Evidence/reporting platform experience described at high level |
-| TypeScript | Proprietary application delivery experience described without source disclosure |
-| React | UI/report workflow screenshots, no frontend source disclosed |
-| Node.js | Platform/API experience described without backend source disclosure |
-| REST APIs | Evidence pipeline experience described without private endpoint details |
-| Benchmarking | NCCL Tests methodology and raw output preservation |
-| Performance Engineering | Message-size and bandwidth interpretation from evidence |
-| System Design | Public/private architecture boundaries and evidence flow diagrams |
-| Enterprise Documentation | Report suite, README, roadmap, demo guide, resume package |
-| Technical Writing | Source-grounded docs with explicit limitations |
-| Infrastructure Validation | GPU, driver, CUDA, NCCL, evidence, and report workflow |
-| Evidence Collection | Raw file, screenshots, sanitized reports, references |
-| Cluster Operations | HPC readiness and multi-GPU operation framing |
-| HPC | Collective communication and AI infrastructure workload context |
-| AI Infrastructure | A100 benchmark lab and enterprise compute validation narratives |
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
+
+
+| Skill area | Demonstrated evidence | Reader signal |
+| :--- | :--- | :--- |
+| Linux | Host-oriented validation flow, command provenance, artifact handling | Can work close to infrastructure |
+| HPC | Collective communication concepts, topology awareness, benchmark constraints | Understands performance-sensitive systems |
+| CUDA | Runtime evidence and compatibility framing | Can reason about GPU software stacks |
+| NCCL | AllReduce evidence and collective methodology | Understands distributed AI communication |
+| GPU Infrastructure | A100 inventory, driver/runtime, topology, evidence limitations | Practical infrastructure validation |
+| RunPod | Authorized cloud GPU lab setup | Can use modern GPU capacity providers |
+| Distributed Systems | Rank, collective, and point-to-point communication explanations | Can reason beyond single-process workloads |
+| Performance Engineering | Message-size scaling and bandwidth interpretation | Interprets results responsibly |
+| System Design | Public/private boundary and evidence pipeline diagrams | Protects IP while communicating architecture |
+| Enterprise Documentation | Executive, customer, technical, and management reports | Communicates to multiple stakeholders |
+| Security/IP Discipline | Sanitization policy, screenshot removal, no internals disclosed | Publication readiness judgment |
+| AI Infrastructure | Multi-GPU readiness framing for training/inference environments | Relevant to enterprise AI compute roles |

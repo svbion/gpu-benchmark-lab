@@ -1,18 +1,20 @@
 # Case Study: Infrastructure Validation Workflow
 
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
+
+
 ## Context
 
-GPU infrastructure acceptance requires hardware inventory, software runtime validation, benchmark execution, and evidence preservation.
+GPU infrastructure validation spans hardware visibility, runtime compatibility, benchmark execution, and evidence preservation.
+
+## Challenge
+
+The challenge was building a workflow understandable to engineers, recruiters, customers, and executives.
 
 ## Approach
 
-- Validate Linux host access.
-- Confirm NVIDIA driver and GPU visibility.
-- Capture CUDA/NCCL runtime context.
-- Run approved collective benchmarks.
-- Preserve raw outputs and screenshots.
-- Convert findings into reports.
+The workflow separates lab setup, evidence capture, benchmark interpretation, reporting, and publication review.
 
 ## Result
 
-The workflow supports repeatable engineering review and executive communication.
+The result is a reusable public method for explaining enterprise AI compute readiness.

@@ -1,25 +1,23 @@
 # Lessons Learned
 
-> Evidence policy: this public repository contains documentation, sanitized evidence references, screenshots, and report examples only. GPUValidator is a proprietary internal enterprise platform and remains private. No GPUValidator source code, backend, frontend, authentication, agent implementation, APIs, business logic, or enterprise architecture is included.
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
 
 ## Technical Lessons
 
-- GPU readiness requires both inventory validation and communication validation.
-- NCCL output is useful only when preserved with command parameters and runtime versions.
-- Correctness columns such as `#wrong` and out-of-bounds checks are first-class acceptance signals.
-- A public portfolio must distinguish raw evidence from methodology examples.
-- Screenshots communicate workflow context, while raw output anchors technical claims.
+- GPU validation requires more than device visibility; runtime, topology context, command provenance, correctness, and benchmark scope all matter.
+- NCCL collectives are a practical gateway into distributed AI infrastructure reasoning.
+- Message-size scaling should be interpreted with care and linked to raw evidence.
+- Missing evidence should be documented as a limitation, not filled with assumptions.
 
 ## Operational Lessons
 
-- Authorized access boundaries matter in cloud GPU environments.
-- Token handling and screenshot hygiene are part of professional infrastructure practice.
-- Benchmark workflows should be reproducible without becoming arbitrary remote shells.
-- Report generation is valuable when it preserves source lineage from evidence to conclusion.
+- Public portfolio work needs the same evidence discipline expected in enterprise customer engagements.
+- Provider and lab restrictions shape what can be collected and published.
+- Screenshots are risky release artifacts because they can expose product design, users, cluster labels, statuses, and operational workflows.
+- A clean public/private boundary increases credibility with customers, employers, investors, and acquirers.
 
-## Portfolio Lessons
+## Career Lessons
 
-- Proprietary products can be discussed at a high level without exposing source code.
-- The public artifact should demonstrate judgment, methodology, and communication skill.
-- The absence of evidence should be clearly documented rather than filled with invented data.
+- Senior infrastructure work includes technical execution, risk framing, documentation, and audience-specific communication.
+- Recruiters need fast signal; hiring managers need methodology; customers need confidence; investors need protected commercial value.

@@ -1,51 +1,28 @@
 # Demo Guide
 
-> Evidence policy: this public repository contains documentation, sanitized evidence references, screenshots, and report examples only. GPUValidator is a proprietary internal enterprise platform and remains private. No GPUValidator source code, backend, frontend, authentication, agent implementation, APIs, business logic, or enterprise architecture is included.
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
 
 ## Suggested Portfolio Walkthrough
 
-1. Start with the README hero and environment table.
-2. Open [Benchmark results](BENCHMARK_RESULTS.md) and show that only AllReduce has raw public output.
-3. Open the raw evidence file and point to NCCL, CUDA, driver, GPU count, and correctness fields.
-4. Show screenshots to explain the operational workflow.
-5. Open [Reports documentation](reports/README.md) to discuss executive communication.
-6. Finish with [Resume project summary](RESUME_PROJECT_SUMMARY.md).
+1. Start with the README executive summary and recruiter snapshot.
+2. Explain the problem: enterprise GPU readiness requires evidence, not assumptions.
+3. Walk through RunPod setup and hardware/runtime scope.
+4. Explain NCCL and AllReduce methodology.
+5. Show the benchmark-results limitation language.
+6. Review the public/private GPUValidator boundary.
+7. Open the reports catalog and explain audience-specific reporting.
+8. Close with resume bullets and About Sabion.
 
-## Screenshots and Captions
+## Public Visuals
 
-### RunPod Agent Online
+| Visual | Purpose |
+| :--- | :--- |
+| [Benchmark lab overview](../assets/public/benchmark-lab-overview.svg) | Lab-to-report workflow |
+| [Evidence to report](../assets/public/evidence-to-report.svg) | Technical evidence to executive documentation |
+| [GPUValidator boundary](../assets/public/gpuvalidator-boundary.svg) | Proprietary boundary |
+| [Professional photo placeholder](../assets/public/profile-placeholder.svg) | Portfolio photo placeholder |
 
-![RunPod agent online](../assets/screenshots/runpod/runpod-agent-online.png)
+## Screenshot Policy
 
-Caption: Supplied screenshot showing the RunPod-oriented validation workflow with an online agent context.
-
-### GPU Inventory
-
-![RunPod GPU inventory](../assets/screenshots/runpod/runpod-gpu-inventory.png)
-
-Caption: Supplied screenshot showing GPU inventory presentation for the A100 validation environment.
-
-### Hardware Validation
-
-![RunPod hardware validation](../assets/screenshots/runpod/runpod-hardware-validation.png)
-
-Caption: Supplied screenshot showing hardware validation workflow context.
-
-### Validation Results
-
-![RunPod validation results](../assets/screenshots/runpod/runpod-validation-results.png)
-
-Caption: Supplied screenshot showing validation result review context.
-
-### Reports Catalog
-
-![Reports catalog](../assets/screenshots/reports/reports-catalog.png)
-
-Caption: Supplied screenshot showing report-oriented documentation workflow.
-
-### NCCL Results Reference
-
-![NCCL results reference](../assets/screenshots/reports/nccl-results-reference.png)
-
-Caption: Supplied screenshot showing NCCL result presentation context.
+Do not use production screenshots in the public demo. Use conceptual visuals or screenshots of this public repository only.

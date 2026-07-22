@@ -1,17 +1,16 @@
 # Benchmark Results
 
-> Evidence policy: this public repository contains documentation, sanitized evidence references, screenshots, and report examples only. GPUValidator is a proprietary internal enterprise platform and remains private. No GPUValidator source code, backend, frontend, authentication, agent implementation, APIs, business logic, or enterprise architecture is included.
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
 
 ## Evidence Manifest
 
-| Artifact | Type | Source Status | Notes |
+| Artifact | Type | Public status | Notes |
 | :--- | :--- | :--- | :--- |
-| [redacted-real-nccl-all-reduce.txt](../evidence/raw/nccl/redacted-real-nccl-all-reduce.txt) | NCCL output | Redacted real-format fixture | Preserves real NCCL Tests output structure; must not be represented as customer evidence |
-| [runpod-agent-online.png](../assets/screenshots/runpod/runpod-agent-online.png) | Screenshot | Supplied screenshot | Online RunPod evidence screen |
-| [runpod-gpu-inventory.png](../assets/screenshots/runpod/runpod-gpu-inventory.png) | Screenshot | Supplied screenshot | GPU inventory screen |
-| [runpod-hardware-validation.png](../assets/screenshots/runpod/runpod-hardware-validation.png) | Screenshot | Supplied screenshot | Hardware validation screen |
-| [runpod-validation-results.png](../assets/screenshots/runpod/runpod-validation-results.png) | Screenshot | Supplied screenshot | Validation results screen |
+| [redacted-real-nccl-all-reduce.txt](../evidence/raw/nccl/redacted-real-nccl-all-reduce.txt) | NCCL Tests text fixture | Redacted real-format fixture | Preserves output structure and selected non-sensitive values; must not be represented as customer evidence |
+| [benchmark-lab-overview.svg](../assets/public/benchmark-lab-overview.svg) | Conceptual visual | Public-safe illustration | Replaces production screenshots |
+| [evidence-to-report.svg](../assets/public/evidence-to-report.svg) | Conceptual visual | Public-safe illustration | Shows documentation flow only |
+| [gpuvalidator-boundary.svg](../assets/public/gpuvalidator-boundary.svg) | Conceptual visual | Public-safe illustration | Shows public/private boundary only |
 
 ## AllReduce
 
@@ -21,13 +20,13 @@ AllReduce combines values from every GPU rank and returns the reduced result to 
 
 ### Communication Pattern
 
-Every rank contributes data; every rank receives the final reduced data.
+Every rank contributes data; every rank receives the reduced result.
 
 ### Typical AI Use Case
 
 Distributed data-parallel training gradient synchronization.
 
-### Command
+### Command Shape
 
 ```bash
 ./build/all_reduce_perf -b 8M -e 8G -f 2 -g 4 -w 5 -n 20
@@ -35,11 +34,13 @@ Distributed data-parallel training gradient synchronization.
 
 ### Evidence
 
-Raw output: [redacted-real-nccl-all-reduce.txt](../evidence/raw/nccl/redacted-real-nccl-all-reduce.txt)
+Fixture: [redacted-real-nccl-all-reduce.txt](../evidence/raw/nccl/redacted-real-nccl-all-reduce.txt)
 
-### Output
+Important limitation: this is a redacted real-format fixture, not customer evidence and not a complete certification artifact.
 
-| Size Bytes | Count | Type | Reduction | Time | Alg BW | Bus BW | Wrong |
+### Quoted Fixture Rows
+
+| Size bytes | Count | Type | Reduction | Time | Alg BW | Bus BW | Wrong |
 | :--- | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
 | 8388608 | 2097152 | float | sum | 315.2 | 26.61 | 39.91 | 0 |
 | 67108864 | 16777216 | float | sum | 720.1 | 93.19 | 139.78 | 0 |
@@ -55,174 +56,21 @@ Raw footer:
 
 ### Lessons Learned
 
-- Correctness matters as much as throughput; `#wrong` remained `0` in the included rows.
-- Larger payloads exposed higher reported bus bandwidth in the raw output.
-- The public repository preserves the raw output rather than restating unsupported conclusions.
-
-## AllGather
-
-### Purpose
-
-AllGather collects data from every rank and makes the concatenated result available to every rank.
-
-### Communication Pattern
-
-Each GPU contributes a shard; all GPUs receive all shards.
-
-### Typical AI Use Case
-
-Tensor/model-parallel workloads that need to materialize distributed activations or parameters.
-
-### Command
-
-```bash
-./build/all_gather_perf -b 8M -e 8G -f 2 -g 4 -w 5 -n 20
-```
-
-### Evidence
-
-No raw public AllGather output is included in this repository. No AllGather metrics are claimed.
-
-### Lessons Learned
-
-Documenting the command and purpose is useful, but portfolio-grade performance claims require raw output before publication.
-
-## ReduceScatter
-
-### Purpose
-
-ReduceScatter reduces values across ranks and distributes distinct output shards back to ranks.
-
-### Communication Pattern
-
-All ranks contribute; each rank receives a reduced shard.
-
-### Typical AI Use Case
-
-Distributed optimizer sharding and memory-efficient gradient reduction.
-
-### Command
-
-```bash
-./build/reduce_scatter_perf -b 8M -e 8G -f 2 -g 4 -w 5 -n 20
-```
-
-### Evidence
-
-No raw public ReduceScatter output is included in this repository. No ReduceScatter metrics are claimed.
-
-### Lessons Learned
-
-ReduceScatter is critical for scalable training, but raw evidence must be added before asserting performance.
-
-## Broadcast
-
-### Purpose
-
-Broadcast sends data from one root rank to all other ranks.
-
-### Communication Pattern
-
-One root GPU sends; all other GPUs receive.
-
-### Typical AI Use Case
-
-Model weight initialization, configuration distribution, checkpoint parameter broadcast.
-
-### Command
-
-```bash
-./build/broadcast_perf -b 8M -e 8G -f 2 -g 4 -w 5 -n 20
-```
-
-### Evidence
-
-No raw public Broadcast output is included in this repository. No Broadcast metrics are claimed.
-
-### Lessons Learned
-
-Broadcast validates root-to-peer propagation behavior but should not be summarized numerically without raw output.
-
-## Reduce
-
-### Purpose
-
-Reduce combines data from all ranks and returns the reduced result to one root rank.
-
-### Communication Pattern
-
-Many-to-one reduction.
-
-### Typical AI Use Case
-
-Metric aggregation, loss/statistics aggregation, rank-root summaries.
-
-### Command
-
-```bash
-./build/reduce_perf -b 8M -e 8G -f 2 -g 4 -w 5 -n 20
-```
-
-### Evidence
-
-No raw public Reduce output is included in this repository. No Reduce metrics are claimed.
-
-### Lessons Learned
-
-Reduce is useful for root-centric aggregation workflows; raw output is required for any bandwidth claim.
-
-## AllToAll
-
-### Purpose
-
-AllToAll exchanges unique data blocks between every pair of ranks.
-
-### Communication Pattern
-
-Every rank sends distinct shards to every other rank and receives distinct shards from every other rank.
-
-### Typical AI Use Case
-
-Mixture-of-experts token dispatch, distributed transpose, expert parallel routing.
-
-### Command
-
-```bash
-./build/alltoall_perf -b 8M -e 8G -f 2 -g 4 -w 5 -n 20
-```
-
-### Evidence
-
-No raw public AllToAll output is included in this repository. No AllToAll metrics are claimed.
-
-### Lessons Learned
-
-AllToAll is often stress-heavy and workload-dependent; publish only with raw evidence and context.
-
-## SendRecv
-
-### Purpose
-
-SendRecv measures point-to-point communication between rank pairs.
-
-### Communication Pattern
-
-Rank-to-rank send and receive traffic.
-
-### Typical AI Use Case
-
-Pipeline parallel stage transfer, custom distributed protocols, targeted tensor exchange.
-
-### Command
-
-```bash
-./build/sendrecv_perf -b 8M -e 8G -f 2 -g 4 -w 5 -n 20
-```
-
-### Evidence
-
-No raw public SendRecv output is included in this repository. No SendRecv metrics are claimed.
-
-### Lessons Learned
-
-Point-to-point evidence complements collective tests, but it needs raw output before performance conclusions.
+- Correctness matters as much as throughput; the quoted rows show `#wrong` as `0`.
+- Larger payloads in the fixture report higher bandwidth than small payloads, consistent with bandwidth-sensitive scaling.
+- The fixture is useful for methodology and interpretation, but publication-quality customer acceptance would require approved raw evidence, topology context, and provenance.
+
+## Methodology-Only Benchmarks
+
+| Benchmark | Purpose | Public status | Publication rule |
+| :--- | :--- | :--- | :--- |
+| AllGather | Gather rank-local tensors from all GPUs to all GPUs | Methodology only | Add metrics only after approved raw output exists |
+| ReduceScatter | Reduce across ranks and scatter result shards | Methodology only | Add metrics only after approved raw output exists |
+| Broadcast | Send one root tensor to every rank | Methodology only | Add metrics only after approved raw output exists |
+| Reduce | Reduce all ranks to one root rank | Methodology only | Add metrics only after approved raw output exists |
+| AllToAll | Exchange unique shards between all ranks | Methodology only | Add metrics only after approved raw output exists |
+| SendRecv | Point-to-point pair communication | Methodology only | Add metrics only after approved raw output exists |
+
+## Executive Interpretation
+
+The public artifact demonstrates benchmark literacy, evidence discipline, and communication quality. It does not certify a customer cluster or disclose proprietary benchmark orchestration.

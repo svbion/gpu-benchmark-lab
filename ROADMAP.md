@@ -1,24 +1,22 @@
 # Roadmap
 
-> Evidence policy: this public repository contains documentation, sanitized evidence references, screenshots, and report examples only. GPUValidator is a proprietary internal enterprise platform and remains private. No GPUValidator source code, backend, frontend, authentication, agent implementation, APIs, business logic, or enterprise architecture is included.
+> Public release boundary: this repository documents engineering methodology, sanitized evidence references, benchmark interpretation, and executive reporting. GPUValidator is proprietary software. No source code, product internals, API contracts, database schemas, authentication/RBAC design, agent protocol, customer data, private URLs, secrets, or production screenshots are included.
 
 
 ## Near Term
 
-- Add customer-approved raw output files for all NCCL collectives beyond AllReduce.
-- Add sanitized GPU topology output from `nvidia-smi topo -m` when approved for public release.
-- Add a public evidence manifest with checksums for each raw artifact and screenshot.
-- Add GitHub Actions for markdown link validation.
+- Add provider-approved raw outputs for AllGather, ReduceScatter, Broadcast, Reduce, AllToAll, and SendRecv only after public-release approval.
+- Add sanitized topology evidence from `nvidia-smi topo -m` only if hostnames, bus IDs, UUIDs, and provider identifiers are approved or redacted.
+- Add screenshot provenance notes for any future public visuals.
+- Add GitHub Actions for documentation validation.
 
 ## Medium Term
 
-- Add multi-node methodology documentation for NCCL once real multi-node evidence is available.
-- Add HPL methodology and evidence only after approved real output exists.
-- Add DCGM diagnostic workflow documentation with explicit approval boundaries.
-- Add report templates that map technical findings to executive risk categories.
+- Add multi-node NCCL methodology once real multi-node evidence is available and approved.
+- Add HPL, HPL-AI, HPCG, OSU MPI, fio, or iperf3 sections only when real output and constraints are documented.
+- Add a signed evidence manifest for formal customer/public portfolio use.
 
 ## Long Term
 
-- Publish a companion blog post explaining enterprise AI compute acceptance testing.
-- Add portfolio video walkthrough and annotated architecture diagrams.
-- Add sanitized before/after report examples for executive, infrastructure, GPU inventory, and management audiences.
+- Publish additional case studies for GPU troubleshooting, scheduler-aware validation, and enterprise acceptance workflows without revealing proprietary implementation.
+- Create a talk or webinar based on the public methodology and lessons learned.
