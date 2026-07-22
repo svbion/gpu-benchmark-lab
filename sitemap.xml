@@ -1,0 +1,11 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://svbion.github.io/gpu-benchmark-lab/</loc><priority>1.0</priority></url>
+  <url><loc>https://svbion.github.io/gpu-benchmark-lab/README.md</loc><priority>0.8</priority></url>
+  <url><loc>https://svbion.github.io/gpu-benchmark-lab/docs/BENCHMARK_METHODOLOGY.md</loc><priority>0.7</priority></url>
+  <url><loc>https://svbion.github.io/gpu-benchmark-lab/docs/BENCHMARK_RESULTS.md</loc><priority>0.7</priority></url>
+  <url><loc>https://svbion.github.io/gpu-benchmark-lab/docs/GPUVALIDATOR_OVERVIEW.md</loc><priority>0.7</priority></url>
+</urlset>

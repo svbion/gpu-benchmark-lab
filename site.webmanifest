@@ -1,0 +1,10 @@
+{
+  "name": "GPU Benchmark Lab",
+  "short_name": "GPU Lab",
+  "description": "Enterprise GPU benchmarking and validation case study.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#05070d",
+  "theme_color": "#05070d",
+  "icons": [{"src": "assets/site/favicon.svg", "sizes": "64x64", "type": "image/svg+xml"}]
+}

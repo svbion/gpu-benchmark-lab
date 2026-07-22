@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://svbion.github.io/gpu-benchmark-lab/sitemap.xml
