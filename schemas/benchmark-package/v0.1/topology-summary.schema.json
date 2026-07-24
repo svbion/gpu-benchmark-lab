@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svbion.github.io/gpu-benchmark-lab/schemas/benchmark-package/v0.1/topology-summary.schema.json",
+  "type": "object",
+  "required": [
+    "gpu_count",
+    "matrix",
+    "all_visible_gpu_pairs_nvlink_connected"
+  ],
+  "properties": {
+    "gpu_count": {
+      "type": "integer"
+    },
+    "matrix": {
+      "type": "array"
+    },
+    "all_visible_gpu_pairs_nvlink_connected": {
+      "type": "boolean"
+    }
+  }
+}

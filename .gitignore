@@ -57,3 +57,14 @@ node_modules/
 # IDE
 .vscode/
 .idea/
+# GPU benchmark publication safety
+raw-artifacts/**/*.tar.gz
+raw-artifacts/**/*.zip
+raw-artifacts/**/*RAW*
+**/*RAW*.tar.gz
+**/*PRIVATE*.tar.gz
+**/nccl-tests/build/
+**/nccl-tests/*_perf
+*.pem
+*.key
+raw-artifacts/

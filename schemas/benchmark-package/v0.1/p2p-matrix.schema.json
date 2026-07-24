@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svbion.github.io/gpu-benchmark-lab/schemas/benchmark-package/v0.1/p2p-matrix.schema.json",
+  "type": "object",
+  "required": [
+    "matrices",
+    "aggregate_status"
+  ],
+  "properties": {
+    "matrices": {
+      "type": "object"
+    },
+    "aggregate_status": {
+      "type": "string"
+    }
+  }
+}

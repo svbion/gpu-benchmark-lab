@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svbion.github.io/gpu-benchmark-lab/schemas/benchmark-package/v0.1/benchmark-index-entry.schema.json",
+  "type": "object",
+  "required": [
+    "benchmark_id",
+    "title",
+    "provider",
+    "gpu_model",
+    "path",
+    "status"
+  ],
+  "properties": {
+    "benchmark_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "gpu_model": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

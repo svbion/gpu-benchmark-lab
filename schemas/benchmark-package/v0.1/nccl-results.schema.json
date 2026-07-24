@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svbion.github.io/gpu-benchmark-lab/schemas/benchmark-package/v0.1/nccl-results.schema.json",
+  "type": "object",
+  "required": [
+    "summary",
+    "rows"
+  ],
+  "properties": {
+    "summary": {
+      "type": "object"
+    },
+    "rows": {
+      "type": "array"
+    }
+  }
+}

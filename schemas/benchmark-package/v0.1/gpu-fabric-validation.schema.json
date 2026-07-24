@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svbion.github.io/gpu-benchmark-lab/schemas/benchmark-package/v0.1/gpu-fabric-validation.schema.json",
+  "type": "object",
+  "required": [
+    "status",
+    "gpu_count",
+    "fully_connected_fabric",
+    "findings"
+  ],
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "gpu_count": {
+      "type": "integer"
+    },
+    "fully_connected_fabric": {
+      "type": "boolean"
+    },
+    "findings": {
+      "type": "array"
+    }
+  }
+}

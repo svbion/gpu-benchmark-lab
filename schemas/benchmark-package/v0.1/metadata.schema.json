@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://svbion.github.io/gpu-benchmark-lab/schemas/benchmark-package/v0.1/metadata.schema.json",
+  "type": "object",
+  "required": [
+    "package_spec_version",
+    "benchmark_id",
+    "benchmark_release",
+    "title",
+    "provider",
+    "gpu_vendor",
+    "gpu_model",
+    "gpu_count",
+    "validation_status",
+    "sanitization_status"
+  ],
+  "properties": {
+    "package_spec_version": {
+      "const": "0.1"
+    },
+    "benchmark_id": {
+      "type": "string"
+    },
+    "benchmark_release": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "gpu_vendor": {
+      "type": "string"
+    },
+    "gpu_model": {
+      "type": "string"
+    },
+    "gpu_count": {
+      "type": "integer"
+    },
+    "validation_status": {
+      "type": "string"
+    },
+    "sanitization_status": {
+      "type": "string"
+    }
+  }
+}
