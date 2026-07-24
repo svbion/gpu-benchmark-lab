@@ -1,0 +1,10 @@
+collective,row_count,average_bus_bandwidth_gbps,max_out_of_place_bus_bandwidth_gbps,max_in_place_bus_bandwidth_gbps,validation_errors,nccl_version
+all_gather_perf,31,108.621,351.48,357.79,0,
+all_reduce_perf,31,135.183,414.62,414.48,0,
+alltoall_perf,31,108.318,351.12,352.86,0,
+alltoallv_perf,31,78.6201,279.41,278.16,0,
+broadcast_perf,31,126.01,363.35,363.49,0,
+gather_perf,31,135.1,376.5,376.5,0,
+reduce_perf,31,128.572,366.86,367.12,0,
+reduce_scatter_perf,31,108.968,354.86,356.46,0,
+sendrecv_perf,31,89.9071,366.17,365.04,0,

@@ -1,0 +1,84 @@
+{
+  "schema_version": "0.1.0",
+  "gpu_count": 5,
+  "gpu_labels": [
+    "GPU0",
+    "GPU1",
+    "GPU2",
+    "GPU3",
+    "GPU4"
+  ],
+  "matrix": [
+    [
+      "X",
+      "NV18",
+      "NV18",
+      "NV18",
+      "NV18"
+    ],
+    [
+      "NV18",
+      "X",
+      "NV18",
+      "NV18",
+      "NV18"
+    ],
+    [
+      "NV18",
+      "NV18",
+      "X",
+      "NV18",
+      "NV18"
+    ],
+    [
+      "NV18",
+      "NV18",
+      "NV18",
+      "X",
+      "NV18"
+    ],
+    [
+      "NV18",
+      "NV18",
+      "NV18",
+      "NV18",
+      "X"
+    ]
+  ],
+  "gpu_pairs": 10,
+  "nvlink_connected_pairs": 10,
+  "all_visible_gpu_pairs_nvlink_connected": true,
+  "topology_labels": [
+    "NV18"
+  ],
+  "nvlink_width_labels": [
+    "NV18"
+  ],
+  "cpu_affinity": {
+    "GPU0": "0-63,128-191",
+    "GPU1": "0-63,128-191",
+    "GPU2": "64-127,192-255",
+    "GPU3": "64-127,192-255",
+    "GPU4": "64-127,192-255"
+  },
+  "numa_affinity": {
+    "GPU0": "0",
+    "GPU1": "0",
+    "GPU2": "1",
+    "GPU3": "1",
+    "GPU4": "1"
+  },
+  "nic_names": {
+    "NIC0": "ibp3s0",
+    "NIC1": "ibp36s0",
+    "NIC2": "ibp68s0",
+    "NIC3": "ibp99s0",
+    "NIC4": "ibp131s0",
+    "NIC5": "ibp164s0",
+    "NIC6": "ibp196s0",
+    "NIC7": "ibp227s0",
+    "NIC8": "rocep211s0f0",
+    "NIC9": "rocep211s0f1"
+  },
+  "classification": "fully connected NVLink fabric"
+}

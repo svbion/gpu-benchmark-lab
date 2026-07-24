@@ -1,0 +1,28 @@
+# NCCL Warnings and Fallbacks
+
+- `HOST-REDACTED:7213:7226 [4] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. Using internal network plugin.`
+- `HOST-REDACTED:7213:7226 [4] NCCL INFO Failed to open libibverbs.so[.1]`
+- `HOST-REDACTED:7213:7226 [4] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7213:7223 [1] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7213:7225 [3] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7213:7222 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7213:7224 [2] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7213:7223 [1] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7213:7222 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7213:7226 [4] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7213:7225 [3] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7213:7224 [2] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7213:7226 [4] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so libnccl-net.so. Using internal tuner plugin.`
+- `HOST-REDACTED:7253:7265 [3] NCCL INFO NET/Plugin: Could not find: libnccl-net.so. Using internal network plugin.`
+- `HOST-REDACTED:7253:7265 [3] NCCL INFO Failed to open libibverbs.so[.1]`
+- `HOST-REDACTED:7253:7265 [3] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7253:7264 [2] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7253:7266 [4] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7253:7262 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7253:7263 [1] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7253:7266 [4] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7253:7265 [3] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7253:7263 [1] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7253:7264 [2] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7253:7262 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'eth0'`
+- `HOST-REDACTED:7253:7262 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so libnccl-net.so. Using internal tuner plugin.`

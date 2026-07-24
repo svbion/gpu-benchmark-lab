@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.1.0",
+  "status": "PASS",
+  "conclusion": "Fully connected peer-visible NVLink fabric verified for the visible GPU set.",
+  "gpu_count": 5,
+  "gpu_models": [
+    "NVIDIA H200"
+  ],
+  "nvlink_capable_hardware": "PASS",
+  "active_physical_nvlink": "PASS",
+  "peer_nvlink_topology": "PASS",
+  "peer_read_support": "PASS",
+  "peer_write_support": "PASS",
+  "peer_atomic_support": "PASS",
+  "fully_connected_fabric": true,
+  "partial_fabric": false,
+  "fabric_classification": "fully connected NVLink fabric",
+  "nvlink_widths": [
+    18
+  ],
+  "reported_link_rates_gbps": [
+    26.562
+  ],
+  "findings": [
+    {
+      "status": "PASS",
+      "kind": "inventory",
+      "message": "5 visible GPUs listed."
+    },
+    {
+      "status": "PASS",
+      "kind": "physical_nvlink",
+      "message": "Physical NVLink interfaces reported active."
+    },
+    {
+      "status": "PASS",
+      "kind": "peer_topology",
+      "message": "All visible GPU pairs use NVLink topology tokens."
+    },
+    {
+      "status": "PASS",
+      "kind": "p2p_nvlink",
+      "message": "nvlink matrix aggregate PASS"
+    },
+    {
+      "status": "PASS",
+      "kind": "p2p_read",
+      "message": "read matrix aggregate PASS"
+    },
+    {
+      "status": "PASS",
+      "kind": "p2p_write",
+      "message": "write matrix aggregate PASS"
+    },
+    {
+      "status": "PASS",
+      "kind": "p2p_atomics",
+      "message": "atomics matrix aggregate PASS"
+    }
+  ],
+  "evidence_citations": {
+    "inventory": "evidence/gpu/nvidia-smi-list.txt",
+    "topology": "evidence/topology/topology-matrix.txt",
+    "p2p": "evidence/nvlink/p2p-*.txt",
+    "nvlink_status": "evidence/nvlink/nvlink-status.txt"
+  },
+  "remediation_recommendations": [
+    "If peer topology is SYS/PHB/PXB/PIX while links are active, request a GPU allocation exposing NVLink peer paths or review cloud/container fabric visibility."
+  ],
+  "confidence_notes": [
+    "Claims are limited to sanitized nvidia-smi topology, P2P matrices, NVLink status, NCCL XML/debug logs, and benchmark outputs."
+  ]
+}

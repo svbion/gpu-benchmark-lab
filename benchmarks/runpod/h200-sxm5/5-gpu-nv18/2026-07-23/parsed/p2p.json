@@ -1,0 +1,610 @@
+{
+  "schema_version": "0.1.0",
+  "matrices": {
+    "nvlink": {
+      "kind": "nvlink",
+      "labels": [
+        "GPU0",
+        "GPU1",
+        "GPU2",
+        "GPU3",
+        "GPU4"
+      ],
+      "matrix": [
+        [
+          "X",
+          "OK",
+          "OK",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "X",
+          "OK",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "X",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "OK",
+          "X",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "OK",
+          "OK",
+          "X"
+        ]
+      ],
+      "pairs": [
+        {
+          "source": "GPU0",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU3",
+          "status": "OK"
+        }
+      ],
+      "aggregate_status": "PASS",
+      "all_ok": true
+    },
+    "read": {
+      "kind": "read",
+      "labels": [
+        "GPU0",
+        "GPU1",
+        "GPU2",
+        "GPU3",
+        "GPU4"
+      ],
+      "matrix": [
+        [
+          "X",
+          "OK",
+          "OK",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "X",
+          "OK",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "X",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "OK",
+          "X",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "OK",
+          "OK",
+          "X"
+        ]
+      ],
+      "pairs": [
+        {
+          "source": "GPU0",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU3",
+          "status": "OK"
+        }
+      ],
+      "aggregate_status": "PASS",
+      "all_ok": true
+    },
+    "write": {
+      "kind": "write",
+      "labels": [
+        "GPU0",
+        "GPU1",
+        "GPU2",
+        "GPU3",
+        "GPU4"
+      ],
+      "matrix": [
+        [
+          "X",
+          "OK",
+          "OK",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "X",
+          "OK",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "X",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "OK",
+          "X",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "OK",
+          "OK",
+          "X"
+        ]
+      ],
+      "pairs": [
+        {
+          "source": "GPU0",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU3",
+          "status": "OK"
+        }
+      ],
+      "aggregate_status": "PASS",
+      "all_ok": true
+    },
+    "atomics": {
+      "kind": "atomics",
+      "labels": [
+        "GPU0",
+        "GPU1",
+        "GPU2",
+        "GPU3",
+        "GPU4"
+      ],
+      "matrix": [
+        [
+          "X",
+          "OK",
+          "OK",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "X",
+          "OK",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "X",
+          "OK",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "OK",
+          "X",
+          "OK"
+        ],
+        [
+          "OK",
+          "OK",
+          "OK",
+          "OK",
+          "X"
+        ]
+      ],
+      "pairs": [
+        {
+          "source": "GPU0",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU0",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU1",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU3",
+          "status": "OK"
+        },
+        {
+          "source": "GPU2",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU3",
+          "target": "GPU4",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU0",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU1",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU2",
+          "status": "OK"
+        },
+        {
+          "source": "GPU4",
+          "target": "GPU3",
+          "status": "OK"
+        }
+      ],
+      "aggregate_status": "PASS",
+      "all_ok": true
+    }
+  },
+  "aggregate_status": "PASS"
+}

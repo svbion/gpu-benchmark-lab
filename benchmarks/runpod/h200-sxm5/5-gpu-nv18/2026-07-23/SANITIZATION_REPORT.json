@@ -1,0 +1,37 @@
+{
+  "rules": [
+    "GPU UUID -> GPU-REDACTED",
+    "private IPv4 -> IP-REDACTED",
+    "MAC -> MAC-REDACTED",
+    "secret assignments -> REDACTED",
+    "home paths -> /HOME-REDACTED",
+    "pod/runpod hostnames -> HOST-REDACTED",
+    "loopback NCCL RAS port -> PORT-REDACTED"
+  ],
+  "files_changed": [
+    "evidence/nccl/nccl-debug.HOST-REDACTED.7253.log",
+    "evidence/nccl/nccl-debug.HOST-REDACTED.8088.log",
+    "evidence/nccl/nccl-debug.HOST-REDACTED.7386.log",
+    "evidence/nccl/nccl-debug.HOST-REDACTED.7351.log",
+    "evidence/nccl/nccl-debug.HOST-REDACTED.7435.log",
+    "evidence/nccl/nccl-debug.HOST-REDACTED.7213.log",
+    "evidence/nccl/nccl-debug.HOST-REDACTED.7868.log",
+    "evidence/nccl/nccl-debug.HOST-REDACTED.7302.log",
+    "evidence/nccl/nccl-debug.HOST-REDACTED.7470.log",
+    "evidence/nccl/nccl-debug.HOST-REDACTED.7702.log"
+  ],
+  "counts": {
+    "gpu_uuid": 0,
+    "private_ip": 0,
+    "mac": 0,
+    "secret_assignment": 0,
+    "home_path": 0,
+    "pod_hostname": 0,
+    "ras_port": 10
+  },
+  "files_excluded": [
+    "raw/private archives",
+    "compiled NCCL tests binaries",
+    "NVIDIA proprietary binaries"
+  ]
+}

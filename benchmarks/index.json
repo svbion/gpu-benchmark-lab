@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "benchmarks": [
+    {
+      "benchmark_id": "runpod-h200-sxm5-5gpu-nv18-20260723",
+      "title": "H200 SXM5 NV18 NCCL Reference Dataset",
+      "provider": "RunPod",
+      "gpu_model": "NVIDIA H200",
+      "gpu_count": 5,
+      "topology": "NV18 all visible GPU pairs",
+      "status": "PASS",
+      "release": "0.1",
+      "path": "benchmarks/runpod/h200-sxm5/5-gpu-nv18/2026-07-23/",
+      "detail_page": "benchmarks/runpod/h200-sxm5-5gpu-nv18-2026-07-23.html"
+    }
+  ]
+}

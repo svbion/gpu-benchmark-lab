@@ -1,0 +1,580 @@
+{
+  "schema_version": "0.1.0",
+  "benchmark_id": "runpod-h200-sxm5-5gpu-nv18-20260723",
+  "package_spec_version": "0.1",
+  "files": [
+    {
+      "path": "IMPORT_NOTES.md",
+      "size_bytes": 817,
+      "sha256": "5eabd916584c32de4632b740b333dd10bac208e8c417765c2411a8c70ee7015d"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 651,
+      "sha256": "e6ad25285045ccdd12244dadaea4353024a486d8b19b1b7df79856e05780d559"
+    },
+    {
+      "path": "SANITIZATION_REPORT.json",
+      "size_bytes": 1143,
+      "sha256": "e83863eb9337ae32c0bf1d64a4fcd066faa074a584e204c58b35e774c7d1f2cf"
+    },
+    {
+      "path": "benchmark-summary.csv",
+      "size_bytes": 528,
+      "sha256": "cac255b0dddb5b5f74d2e269198a9452a6d6367c30ef2d95e4b40e6c6bd3e873"
+    },
+    {
+      "path": "benchmark-summary.json",
+      "size_bytes": 4862,
+      "sha256": "058b1d55bf2a60feecf5d09dba762adaa60389dbfcd86ca8fa37fb6f6c5bd779"
+    },
+    {
+      "path": "charts/all_gather_perf-algorithm-bandwidth.png",
+      "size_bytes": 43553,
+      "sha256": "08e39a21fd9d7bbc3dd6726aa42db939065c28ddabedaeef6ce179c1e19faf12"
+    },
+    {
+      "path": "charts/all_gather_perf-bus-bandwidth.png",
+      "size_bytes": 46261,
+      "sha256": "a9bf4417ab2ca8e245973553eb93d14552a7a0d9c16627287608db6fdaf0adce"
+    },
+    {
+      "path": "charts/all_gather_perf-latency-time.png",
+      "size_bytes": 45916,
+      "sha256": "5b847b60f08f5a033449ee8400b217bb8912acacf1c6e98e8e073f2751c41829"
+    },
+    {
+      "path": "charts/all_reduce_perf-algorithm-bandwidth.png",
+      "size_bytes": 42837,
+      "sha256": "1023ff7f4ba1ec79680ab609c4495f38759ed44597aa3998ccd4c5ea05da199b"
+    },
+    {
+      "path": "charts/all_reduce_perf-bus-bandwidth.png",
+      "size_bytes": 42408,
+      "sha256": "9cb573ef9d017ff94526da3824dd22dfd6ff87dbdf5a5d347439eb60328873c2"
+    },
+    {
+      "path": "charts/all_reduce_perf-latency-time.png",
+      "size_bytes": 42805,
+      "sha256": "e0aba10bbda452bbbe0e7ef659a3c101e0726d72090da4f7edf6b5fb822aebf1"
+    },
+    {
+      "path": "charts/alltoall_perf-algorithm-bandwidth.png",
+      "size_bytes": 42867,
+      "sha256": "cc712043822d74a11125c95e3f545d75c99736997528ca5838c818710c8681c7"
+    },
+    {
+      "path": "charts/alltoall_perf-bus-bandwidth.png",
+      "size_bytes": 45489,
+      "sha256": "5796bc7b46388619ff3c87bee3e828e92240c27016b6b68cb424f2bcc3b3113e"
+    },
+    {
+      "path": "charts/alltoall_perf-latency-time.png",
+      "size_bytes": 45317,
+      "sha256": "cdc536002642ea1a03be252b7220b2966484de5395a58a827072a444dc8ae44b"
+    },
+    {
+      "path": "charts/alltoallv_perf-algorithm-bandwidth.png",
+      "size_bytes": 45898,
+      "sha256": "2fee7aafca58014350d251f60b88cee9d4116e61e66a540696c038f08d128ad5"
+    },
+    {
+      "path": "charts/alltoallv_perf-bus-bandwidth.png",
+      "size_bytes": 43095,
+      "sha256": "b8bc85407f82247ecf228b7b1bd65fcca6018db9d637267099f7566fe2ffcc86"
+    },
+    {
+      "path": "charts/alltoallv_perf-latency-time.png",
+      "size_bytes": 41584,
+      "sha256": "ebb4d29663a66269f59c47651955b9229f1fb80bd8011ead9968c8bd274c243c"
+    },
+    {
+      "path": "charts/broadcast_perf-algorithm-bandwidth.png",
+      "size_bytes": 45361,
+      "sha256": "99c7bd2c6f1811066e89a31851328ab0b043354b9a3b6faba8e401c25a267f49"
+    },
+    {
+      "path": "charts/broadcast_perf-bus-bandwidth.png",
+      "size_bytes": 45313,
+      "sha256": "7ded99598ee8932ff5fe5528b0c3d817aa9d06b35a6f4115095c5cda247d565e"
+    },
+    {
+      "path": "charts/broadcast_perf-latency-time.png",
+      "size_bytes": 39293,
+      "sha256": "93a80e3259ad0144eae3216a7ee3ca121b042e564ae3fc847e6dcdb71dde3363"
+    },
+    {
+      "path": "charts/gather_perf-algorithm-bandwidth.png",
+      "size_bytes": 42315,
+      "sha256": "b66dbfc52f968ccce8b777b5439f6512fb92e1dfc236f2273fd78738a1cae704"
+    },
+    {
+      "path": "charts/gather_perf-bus-bandwidth.png",
+      "size_bytes": 44860,
+      "sha256": "af6a0c0031a10f687062759e9d9b69c156fcccf461d8c9e657e66ce13008e401"
+    },
+    {
+      "path": "charts/gather_perf-latency-time.png",
+      "size_bytes": 43812,
+      "sha256": "4abcb64f6ed8a720837bff847141f20bd47b7546ac83a8bf3b4a728d1622929c"
+    },
+    {
+      "path": "charts/logical-topology.svg",
+      "size_bytes": 3364,
+      "sha256": "8b6368a34d9db9c45b341f41ee1756bb5c1f9a1a7b7ff633047d9a48d02e00f2"
+    },
+    {
+      "path": "charts/nccl-bus-bandwidth-comparison.png",
+      "size_bytes": 113780,
+      "sha256": "eb24ce796748ee71d2c6902e4362150868853de066b73387c0aed444049a005d"
+    },
+    {
+      "path": "charts/reduce_perf-algorithm-bandwidth.png",
+      "size_bytes": 45006,
+      "sha256": "5f69406e5dab9ac4877c0668904fc6a4d7951e47c4252255b925a9bc5f8e4f32"
+    },
+    {
+      "path": "charts/reduce_perf-bus-bandwidth.png",
+      "size_bytes": 44798,
+      "sha256": "e238487a74c086cdbf6a679f20eefac3a161b26086650b68c4df98781114849f"
+    },
+    {
+      "path": "charts/reduce_perf-latency-time.png",
+      "size_bytes": 38965,
+      "sha256": "a048ec2f753652406c84e10905a48151751fe3b1456d1f929b23816cb416ec7f"
+    },
+    {
+      "path": "charts/reduce_scatter_perf-algorithm-bandwidth.png",
+      "size_bytes": 43645,
+      "sha256": "130b9aef3dc10869e210102b9f5f9ed7f7ab4e653c8ec1f74be794fb24993e6f"
+    },
+    {
+      "path": "charts/reduce_scatter_perf-bus-bandwidth.png",
+      "size_bytes": 46787,
+      "sha256": "3a3db9972e70cf43fea830cd891b3cc9a27e68779b934e1fcf61ec0cb168fb07"
+    },
+    {
+      "path": "charts/reduce_scatter_perf-latency-time.png",
+      "size_bytes": 46203,
+      "sha256": "6f18bce2d8f0a34ef75de2a9cb587765822beb91fd3478b029a1e27533e269a0"
+    },
+    {
+      "path": "charts/sendrecv_perf-algorithm-bandwidth.png",
+      "size_bytes": 43881,
+      "sha256": "ad4aeaa4e09c41523579eb7a1ef129548d4358081d9867ed122f06b7401e18ca"
+    },
+    {
+      "path": "charts/sendrecv_perf-bus-bandwidth.png",
+      "size_bytes": 43912,
+      "sha256": "49853f65e948604df8702667d838a1581e58f4dc379d2c6d1fb11e8ba6a76a92"
+    },
+    {
+      "path": "charts/sendrecv_perf-latency-time.png",
+      "size_bytes": 39019,
+      "sha256": "3550986ed80ab4cf297f497bced820f2a23bf5fececfef17424f91fbb67e973a"
+    },
+    {
+      "path": "evidence/gpu/nvidia-smi-list.txt",
+      "size_bytes": 200,
+      "sha256": "3c20be486c035e5fd673eae74f0f6aaf8e625e629932265894583290afc0ea6b"
+    },
+    {
+      "path": "evidence/gpu/nvidia-smi-query.txt",
+      "size_bytes": 265,
+      "sha256": "0be25ee0dc1e268febeb3351f05db08129bd3afdd145333fbe8b4b9319f33311"
+    },
+    {
+      "path": "evidence/nccl/all_gather_perf.txt",
+      "size_bytes": 4825,
+      "sha256": "959e96a31d799ebeeafff6276433aae15f9ffa1297245e56f656407c894f29ab"
+    },
+    {
+      "path": "evidence/nccl/all_reduce_perf.txt",
+      "size_bytes": 4825,
+      "sha256": "174c8bec632e4e7868612d47dced6392813fc3e85dc0bb35970ca9bb219ca512"
+    },
+    {
+      "path": "evidence/nccl/all_reduce_perf_full.txt",
+      "size_bytes": 4825,
+      "sha256": "a4220e4c64f85fe56ee62de422c004ea0b496d9613d402f472d8d198a6d283c4"
+    },
+    {
+      "path": "evidence/nccl/alltoall_perf.txt",
+      "size_bytes": 4790,
+      "sha256": "a345da80c378b975aa5e0d78a52645d9a581117ad9c613fead5bc765d40d4265"
+    },
+    {
+      "path": "evidence/nccl/alltoallv_perf.txt",
+      "size_bytes": 4792,
+      "sha256": "635beb45e790bbb414cc2141dcc7df87b6903f270619280a98a09c021832398e"
+    },
+    {
+      "path": "evidence/nccl/broadcast_perf.txt",
+      "size_bytes": 4822,
+      "sha256": "a2aef2e183938493082d48d92696123b8a75c6937fc2c64f0986c6386b1ddbac"
+    },
+    {
+      "path": "evidence/nccl/dmon.txt",
+      "size_bytes": 188037,
+      "sha256": "1a22f7d18ca2e42742c3dcdd11b9c90788718071e02957092cc11f1c1df17ac9"
+    },
+    {
+      "path": "evidence/nccl/gather_perf.txt",
+      "size_bytes": 4815,
+      "sha256": "66808f8c6c140043901b5d9d4618bb18f7c523cc2853fef82134959ba888dadf"
+    },
+    {
+      "path": "evidence/nccl/gpu-list.txt",
+      "size_bytes": 200,
+      "sha256": "3c20be486c035e5fd673eae74f0f6aaf8e625e629932265894583290afc0ea6b"
+    },
+    {
+      "path": "evidence/nccl/nccl-debug.HOST-REDACTED.7213.log",
+      "size_bytes": 842045,
+      "sha256": "5874dd1d0a9f5851c3d9440a94e5b4ac1914af24bb9322a78d354126e71930a5"
+    },
+    {
+      "path": "evidence/nccl/nccl-debug.HOST-REDACTED.7253.log",
+      "size_bytes": 747996,
+      "sha256": "4003f1319901afc5df7568abe4a961f49b4326416e724854f62a0ec1524e75dc"
+    },
+    {
+      "path": "evidence/nccl/nccl-debug.HOST-REDACTED.7302.log",
+      "size_bytes": 771105,
+      "sha256": "5184e27ed697ec6bb48e54524899d56e9bb5f173d085b8a94309fce6b4ae86d5"
+    },
+    {
+      "path": "evidence/nccl/nccl-debug.HOST-REDACTED.7351.log",
+      "size_bytes": 841083,
+      "sha256": "aa3fe25c689f247a959a3dbe6e469bd18ff1208acc0710e5814a56153183c046"
+    },
+    {
+      "path": "evidence/nccl/nccl-debug.HOST-REDACTED.7386.log",
+      "size_bytes": 821183,
+      "sha256": "2ac332913aac8b6766fdfc578e54afccaff27644013dea9ea49d563041f58a91"
+    },
+    {
+      "path": "evidence/nccl/nccl-debug.HOST-REDACTED.7435.log",
+      "size_bytes": 120816,
+      "sha256": "1826917a4afd83695a92c7631b01019b4706b07910d476fede036b88b0a144bf"
+    },
+    {
+      "path": "evidence/nccl/nccl-debug.HOST-REDACTED.7470.log",
+      "size_bytes": 367844,
+      "sha256": "fcd881fb4b76efe4faec1d5718e0c979ce439442964124a38d97db0abf646215"
+    },
+    {
+      "path": "evidence/nccl/nccl-debug.HOST-REDACTED.7702.log",
+      "size_bytes": 367832,
+      "sha256": "3b91590b21c1a52b16ae0458867a72618bd2c87240dbd9e2e704bff9f11642ab"
+    },
+    {
+      "path": "evidence/nccl/nccl-debug.HOST-REDACTED.7868.log",
+      "size_bytes": 136179,
+      "sha256": "54bb0e1b4c6190e892a8d2aee9f865d68df7ab1929e9c0fe3e15d91d579a3047"
+    },
+    {
+      "path": "evidence/nccl/nccl-debug.HOST-REDACTED.8088.log",
+      "size_bytes": 1552464,
+      "sha256": "433600724e18ef027fb461673f0fb5ad3b12a69e858dbfb4e990ea3b39077882"
+    },
+    {
+      "path": "evidence/nccl/nccl-environment.txt",
+      "size_bytes": 449,
+      "sha256": "28f58af5253ebbe78c31a8318a161236a19c52d70c56df9af4a7c5a1e24712d4"
+    },
+    {
+      "path": "evidence/nccl/nccl-topology.xml",
+      "size_bytes": 4291,
+      "sha256": "62134a8ebbb156b40d48501db55ee354086cf984f8296d25827be5bfcc26db71"
+    },
+    {
+      "path": "evidence/nccl/nvidia-smi-q.txt",
+      "size_bytes": 69587,
+      "sha256": "0663f46b8399cf20532410c419153d7eab8fa8fabe7afbeb3819b2813af400ed"
+    },
+    {
+      "path": "evidence/nccl/nvlink-remote.txt",
+      "size_bytes": 4734,
+      "sha256": "037dfe211301c8bb8963e53a3e9a1b3ca87456e8b22b566d20b5b9fabbb06469"
+    },
+    {
+      "path": "evidence/nccl/nvlink-remotes.txt",
+      "size_bytes": 4734,
+      "sha256": "037dfe211301c8bb8963e53a3e9a1b3ca87456e8b22b566d20b5b9fabbb06469"
+    },
+    {
+      "path": "evidence/nccl/nvlink-status.txt",
+      "size_bytes": 2220,
+      "sha256": "676ab6cf9eea5cc30bfb922cc04b8968c6020497215a58a0e05fa3aeabaff41e"
+    },
+    {
+      "path": "evidence/nccl/p2p-atomic.txt",
+      "size_bytes": 307,
+      "sha256": "3cf8a2236d9aff19b8c17890d6f704c21fb85327535f4a807e34f64658ec658c"
+    },
+    {
+      "path": "evidence/nccl/p2p-nvlink.txt",
+      "size_bytes": 307,
+      "sha256": "3cf8a2236d9aff19b8c17890d6f704c21fb85327535f4a807e34f64658ec658c"
+    },
+    {
+      "path": "evidence/nccl/p2p-read.txt",
+      "size_bytes": 307,
+      "sha256": "3cf8a2236d9aff19b8c17890d6f704c21fb85327535f4a807e34f64658ec658c"
+    },
+    {
+      "path": "evidence/nccl/p2p-write.txt",
+      "size_bytes": 307,
+      "sha256": "3cf8a2236d9aff19b8c17890d6f704c21fb85327535f4a807e34f64658ec658c"
+    },
+    {
+      "path": "evidence/nccl/reduce_perf.txt",
+      "size_bytes": 4817,
+      "sha256": "eff79b6c987b7dd6b9cd9d4065653852834057183fa783e5954275f9fdcdd89b"
+    },
+    {
+      "path": "evidence/nccl/reduce_scatter_perf.txt",
+      "size_bytes": 4833,
+      "sha256": "230ea85e7049926304cde64b900bda8d4631a211950adca3b19a5c95177173c6"
+    },
+    {
+      "path": "evidence/nccl/sendrecv_perf.txt",
+      "size_bytes": 4790,
+      "sha256": "b4ef827552883e381181b92d00a554ec06f219328c0c11353a9b476356fc59e4"
+    },
+    {
+      "path": "evidence/nccl/topology.txt",
+      "size_bytes": 2018,
+      "sha256": "c02d862c5c1909edfef5e35ba6ff830aff96877e6dfd35903cd1dd8156f0c310"
+    },
+    {
+      "path": "evidence/nvlink/nvlink-remote-pci.txt",
+      "size_bytes": 2670,
+      "sha256": "d9cad67fb94ce02b857bddd2012a44ecbabdb3e10d7236f95756c7bb54c81d50"
+    },
+    {
+      "path": "evidence/nvlink/nvlink-remotes.txt",
+      "size_bytes": 4734,
+      "sha256": "037dfe211301c8bb8963e53a3e9a1b3ca87456e8b22b566d20b5b9fabbb06469"
+    },
+    {
+      "path": "evidence/nvlink/nvlink-status.txt",
+      "size_bytes": 2220,
+      "sha256": "676ab6cf9eea5cc30bfb922cc04b8968c6020497215a58a0e05fa3aeabaff41e"
+    },
+    {
+      "path": "evidence/nvlink/p2p-atomic.txt",
+      "size_bytes": 307,
+      "sha256": "3cf8a2236d9aff19b8c17890d6f704c21fb85327535f4a807e34f64658ec658c"
+    },
+    {
+      "path": "evidence/nvlink/p2p-nvlink.txt",
+      "size_bytes": 307,
+      "sha256": "3cf8a2236d9aff19b8c17890d6f704c21fb85327535f4a807e34f64658ec658c"
+    },
+    {
+      "path": "evidence/nvlink/p2p-read.txt",
+      "size_bytes": 307,
+      "sha256": "3cf8a2236d9aff19b8c17890d6f704c21fb85327535f4a807e34f64658ec658c"
+    },
+    {
+      "path": "evidence/nvlink/p2p-write.txt",
+      "size_bytes": 307,
+      "sha256": "3cf8a2236d9aff19b8c17890d6f704c21fb85327535f4a807e34f64658ec658c"
+    },
+    {
+      "path": "evidence/system/cuda-version.txt",
+      "size_bytes": 208,
+      "sha256": "68f8b0a1301428031e307cf5260142a517bff25cc232a09eae2734be475d721f"
+    },
+    {
+      "path": "evidence/system/driver-version.txt",
+      "size_bytes": 55,
+      "sha256": "3641ff2d33e6b9022dfbf336ee32b419cb9ac1dbc02ebe1df3dd352b1d2f3d14"
+    },
+    {
+      "path": "evidence/system/lscpu.txt",
+      "size_bytes": 3863,
+      "sha256": "d76ae3540c49b000eafece498cd3bde08eebfacb7ad55c310152ca90210681b2"
+    },
+    {
+      "path": "evidence/system/numa.txt",
+      "size_bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "evidence/system/uname.txt",
+      "size_bytes": 134,
+      "sha256": "d319138450812b67e5745156190bcce3ddc1dd344b3f0ddddb360053a8f80f68"
+    },
+    {
+      "path": "evidence/topology/topology-matrix.txt",
+      "size_bytes": 2018,
+      "sha256": "c02d862c5c1909edfef5e35ba6ff830aff96877e6dfd35903cd1dd8156f0c310"
+    },
+    {
+      "path": "evidence/topology/topology-pcie-only.txt",
+      "size_bytes": 1949,
+      "sha256": "3765e47ca3a803b5e25e3cb126c7cf65e3b4b2ba576820b77df8a00accceb6c3"
+    },
+    {
+      "path": "lessons/05-watch-nccl-choose-topology.md",
+      "size_bytes": 2170,
+      "sha256": "89a0f03e563fbf7fd95505ed0eaec09909cbec46230eec3176f3f497b99fe543"
+    },
+    {
+      "path": "metadata.json",
+      "size_bytes": 2498,
+      "sha256": "7d2783686acb304c96f9830b18899789c77e5542de418019f3f5566f600fb74e"
+    },
+    {
+      "path": "parsed/fabric.json",
+      "size_bytes": 2058,
+      "sha256": "149f9484e27799d761925d3d9803320da0070fc1a49300f333db858ca2200036"
+    },
+    {
+      "path": "parsed/nccl/all_gather_perf.csv",
+      "size_bytes": 2896,
+      "sha256": "89555a81aa9e8230aa106eb20c2275470323c8ffd4ce33a94318ed2c89842943"
+    },
+    {
+      "path": "parsed/nccl/all_gather_perf.json",
+      "size_bytes": 17099,
+      "sha256": "aebe3bd05cb863ddae0b2ea32cc2d78e2214085245f40663ff9ccb3c787e49e0"
+    },
+    {
+      "path": "parsed/nccl/all_reduce_perf.csv",
+      "size_bytes": 2908,
+      "sha256": "23ce3edb7af86a1234558dff4b6c1c770c546ffcaa30f0e7efd4b9570521296f"
+    },
+    {
+      "path": "parsed/nccl/all_reduce_perf.json",
+      "size_bytes": 17111,
+      "sha256": "ee7a3bc6949fa3a9181f88e5b9d768b9464135ac7437fd787346330bca771069"
+    },
+    {
+      "path": "parsed/nccl/alltoall_perf.csv",
+      "size_bytes": 2851,
+      "sha256": "560c1e368f71a8c33bced4af96474269a24697cbaf598eeea3ecca34bc062b96"
+    },
+    {
+      "path": "parsed/nccl/alltoall_perf.json",
+      "size_bytes": 17052,
+      "sha256": "030bb9caf15de5d78b2b791e4ee57dba0202a1560f05c8d476713b54b93edfee"
+    },
+    {
+      "path": "parsed/nccl/alltoallv_perf.csv",
+      "size_bytes": 2869,
+      "sha256": "bde80a3308c7a043ec6904540f56870d341d126951d261c16bd44eba50696f0d"
+    },
+    {
+      "path": "parsed/nccl/alltoallv_perf.json",
+      "size_bytes": 17071,
+      "sha256": "2c08c049f159432e4cce0633ecb357699339540cafbc822d7cd823fc5b5315e4"
+    },
+    {
+      "path": "parsed/nccl/broadcast_perf.csv",
+      "size_bytes": 2864,
+      "sha256": "595d88dc1020ff6047f8cbb506c1f110f5ef4b429fb2dcbccd35cf42de7737f6"
+    },
+    {
+      "path": "parsed/nccl/broadcast_perf.json",
+      "size_bytes": 17065,
+      "sha256": "aa2e91465223adc9c158ee8c69ebb146c73e08675e73a1bb4a35fe123f59c2b2"
+    },
+    {
+      "path": "parsed/nccl/gather_perf.csv",
+      "size_bytes": 2743,
+      "sha256": "f8e28b4512c987e0d57332ef8bc8cc343bd40d77c3fe35db7a55f84b7a9c8ccb"
+    },
+    {
+      "path": "parsed/nccl/gather_perf.json",
+      "size_bytes": 16938,
+      "sha256": "57d3a26e5896dc738f04313db54e31e53f4ce27bc9c34e778845b42803b7435e"
+    },
+    {
+      "path": "parsed/nccl/reduce_perf.csv",
+      "size_bytes": 2753,
+      "sha256": "8d05c799c5eb7a3663f798bfbbf996f6c1bd556bdac4ac16dfc6970c5a428709"
+    },
+    {
+      "path": "parsed/nccl/reduce_perf.json",
+      "size_bytes": 16952,
+      "sha256": "bb92bbae02a989d7e06a1ffc5465658f8c249862ab074997ebb9584967806004"
+    },
+    {
+      "path": "parsed/nccl/reduce_scatter_perf.csv",
+      "size_bytes": 2987,
+      "sha256": "6b5da343325e4756760b949bd2015788e0b9e4070c92ab7e6937994c611ab814"
+    },
+    {
+      "path": "parsed/nccl/reduce_scatter_perf.json",
+      "size_bytes": 17194,
+      "sha256": "250a8e57fc67fff3563a9582c33785f098752999f4b0cc7df121eb78f2b578ab"
+    },
+    {
+      "path": "parsed/nccl/sendrecv_perf.csv",
+      "size_bytes": 2830,
+      "sha256": "6d04cfaa686e814b4009f13d6f6144cd88c1e101379a3bae3588293470fb3a30"
+    },
+    {
+      "path": "parsed/nccl/sendrecv_perf.json",
+      "size_bytes": 17031,
+      "sha256": "d6c5f85cd1c69a7b8f0ff16127439d7f6ab3b5f3fdea614a271ae22055d38276"
+    },
+    {
+      "path": "parsed/nccl-channels.json",
+      "size_bytes": 9569,
+      "sha256": "32957eb8efa1cb5f7e16bd141c1eb1143fff0f9bc5d51b126417baf4f12ee0e5"
+    },
+    {
+      "path": "parsed/nccl-graph.json",
+      "size_bytes": 19364,
+      "sha256": "6f705d8998242005446138d34a1a18748631d0f9369cf68a48bfd58040888e24"
+    },
+    {
+      "path": "parsed/nccl-topology.json",
+      "size_bytes": 126,
+      "sha256": "677b0897b61d20a046bd8d9663c71b4db61a88ff24442cc840d835ab0181f3b3"
+    },
+    {
+      "path": "parsed/nccl-transports.json",
+      "size_bytes": 3145,
+      "sha256": "5a4efd2d8355bf80597161c56777830a9eea216f93b08f7794f33fe60568540a"
+    },
+    {
+      "path": "parsed/p2p.json",
+      "size_bytes": 11254,
+      "sha256": "105289b732c6f2f9b5248c70bb63061195627c8d9130c4038f0d0a9ad20a554b"
+    },
+    {
+      "path": "parsed/topology.json",
+      "size_bytes": 1325,
+      "sha256": "eb5d7e5a44eb5e4e896c4fcc021e5b235375fafa3b657f93a4ab6c0475faf594"
+    },
+    {
+      "path": "reports/GPU_FABRIC_VALIDATION.md",
+      "size_bytes": 646,
+      "sha256": "575872215659b09a98eb5b109b09da9291852b98dfeae3358ec24a0885b3a741"
+    },
+    {
+      "path": "reports/gpu-fabric-summary.json",
+      "size_bytes": 2058,
+      "sha256": "149f9484e27799d761925d3d9803320da0070fc1a49300f333db858ca2200036"
+    },
+    {
+      "path": "reports/nccl-graph-analysis.md",
+      "size_bytes": 1364,
+      "sha256": "babcf2dd99492973b108bd77cab58db6865eb272c550b35d9a26271dd8388353"
+    },
+    {
+      "path": "reports/nccl-warnings.md",
+      "size_bytes": 2623,
+      "sha256": "9f244b289737a78ffd332959ee3aba86681c5108d84b00a52579f0ee216944b9"
+    }
+  ],
+  "source_archive": "H200-SXM5-NVLink-NCCL-Lab-PUBLIC-20260723-224305.tar.gz",
+  "raw_private_archive_imported": false,
+  "artifact_policy": "Logs and derived artifacts only; no NVIDIA proprietary binaries or compiled nccl-tests binaries."
+}

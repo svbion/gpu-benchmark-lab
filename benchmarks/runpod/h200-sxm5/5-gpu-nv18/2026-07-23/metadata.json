@@ -1,0 +1,59 @@
+{
+  "package_spec_version": "0.1",
+  "benchmark_id": "runpod-h200-sxm5-5gpu-nv18-20260723",
+  "benchmark_release": "0.1",
+  "title": "H200 SXM5 NV18 NCCL Reference Dataset",
+  "provider": "RunPod",
+  "environment_type": "managed cloud GPU container/host evidence",
+  "capture_timestamp_utc": "2026-07-23T22:43:05Z",
+  "publication_timestamp_utc": null,
+  "gpu_vendor": "NVIDIA",
+  "gpu_model": "H200",
+  "gpu_form_factor": "SXM5",
+  "gpu_count": 5,
+  "accelerator_architecture": null,
+  "driver_version": "580.159.03\n580.159.03\n580.159.03\n580.159.03\n580.159.03",
+  "cuda_version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Fri_Feb_21_20:23:50_PST_2025\nCuda compilation tools, release 12.8, V12.8.93\nBuild cuda_12.8.r12.8/compiler.35583870_0",
+  "nccl_version": null,
+  "nccl_tests_git_commit": "a0b82b2260cf5152b9f8c061bbf7eaf0ba096432",
+  "operating_system": "PRETTY_NAME=\"Ubuntu 24.04.3 LTS\"",
+  "kernel": "Linux HOST-REDACTED 6.8.0-134-generic #134~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Jun 30 14:05:04 UTC  x86_64 x86_64 x86_64 GNU/Linux",
+  "cpu_model": null,
+  "numa_domains": [
+    "0",
+    "1"
+  ],
+  "fabric_type": "fully connected NVLink fabric",
+  "topology_label": "NV18 all visible GPU pairs",
+  "nvlink_link_count": 18,
+  "reported_link_rate_gbps": 26.562,
+  "p2p_capabilities": {
+    "nvlink": "PASS",
+    "read": "PASS",
+    "write": "PASS",
+    "atomics": "PASS"
+  },
+  "benchmark_suite": "NCCL Tests",
+  "benchmark_parameters": {
+    "nthreads": 1,
+    "ngpus": 5,
+    "min_bytes": 8,
+    "max_bytes": 8589934592,
+    "warmups": 10,
+    "iterations": 100
+  },
+  "validation_status": "PASS",
+  "sanitization_status": "sanitized public package with additional import redaction",
+  "source_artifact_checksums": {
+    "public_archive_sha256": "2d3bb8e04d846e2ea217c3667ae777854babd38ff0562e872b06cdfd88eb308d"
+  },
+  "generated_artifact_checksums": {},
+  "provenance_notes": [
+    "Imported only from sanitized PUBLIC archive under raw-artifacts. RAW/private archive was not imported.",
+    "Provider and product names may be trademarks of their owners."
+  ],
+  "limitations": [
+    "No unknown fields are fabricated. Physical NVSwitch layout is not claimed beyond evidence-supported logical topology."
+  ],
+  "licensing_information": "Project-authored docs/code follow repository license. NVIDIA tool output and NCCL Tests references remain attributed to their respective owners; no compiled binaries are redistributed."
+}

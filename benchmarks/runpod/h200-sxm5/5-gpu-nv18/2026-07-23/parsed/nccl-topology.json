@@ -1,0 +1,8 @@
+{
+  "available": true,
+  "gpu_busids": [],
+  "nic_names": [
+    "eth0"
+  ],
+  "xml_file": "evidence/nccl/nccl-topology.xml"
+}
