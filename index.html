@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#05070d">
   <meta name="color-scheme" content="dark">
   <title>GPU Benchmark Lab | Enterprise AI Compute Validation</title>
-  <meta name="description" content="A public-safe enterprise GPU benchmarking and validation case study covering RunPod, NVIDIA A100 SXM, CUDA, NCCL, evidence, reports, and AI infrastructure documentation.">
+  <meta name="description" content="A public-safe enterprise GPU benchmarking and validation case study covering RunPod, NVIDIA H200 SXM5, NVLink/NVSwitch-class topology, NCCL, evidence, reports, and AI infrastructure documentation.">
   <meta name="keywords" content="GPU benchmarking, NVIDIA A100, CUDA, NCCL, RunPod, AI infrastructure, Linux, HPC, performance engineering, enterprise validation">
   <meta name="author" content="{{ site.profile.name | default: 'Sabion P. Frazier' }}">
   <meta name="robots" content="index,follow,max-image-preview:large">
@@ -17,7 +17,7 @@
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="GPU Benchmark Lab">
   <meta property="og:title" content="Engineering an Enterprise GPU Benchmarking and Validation Environment">
-  <meta property="og:description" content="RunPod A100 SXM lab setup, CUDA/NCCL methodology, evidence discipline, enterprise reporting, and public-safe GPUValidator positioning.">
+  <meta property="og:description" content="RunPod H200 SXM5 lab setup, CUDA/NCCL methodology, evidence discipline, enterprise reporting, and public-safe GPUValidator positioning.">
   <meta property="og:url" content="https://svbion.github.io/gpu-benchmark-lab/">
   <meta property="og:image" content="https://svbion.github.io/gpu-benchmark-lab/assets/site/og-card.svg">
   <meta property="og:image:alt" content="GPU Benchmark Lab enterprise AI compute validation visual">
@@ -32,7 +32,7 @@
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Engineering an Enterprise GPU Benchmarking and Validation Environment",
-    "description": "A public-safe GPU benchmarking and validation case study covering RunPod, NVIDIA A100 SXM, CUDA, NCCL, evidence, reports, and AI infrastructure documentation.",
+    "description": "A public-safe GPU benchmarking and validation case study covering RunPod, NVIDIA H200 SXM5, NVLink/NVSwitch-class topology, NCCL, evidence, reports, and AI infrastructure documentation.",
     "author": {"@type": "Person", "name": "{{ site.profile.name | default: 'Sabion P. Frazier' }}"},
     "url": "https://svbion.github.io/gpu-benchmark-lab/",
     "about": ["GPU benchmarking", "AI infrastructure", "NVIDIA GPUs", "CUDA", "NCCL", "RunPod"]
@@ -51,7 +51,9 @@
       <a href="#project">Project</a>
       <a href="#methodology">Methodology</a>
       <a href="#reports">Reports</a>
-      <a href="#documentation">Docs</a>
+      <a href="benchmarks/index.html">Benchmarks</a>
+      <a href="nvlink-nccl.html">NVLink/NCCL</a>
+      <a href="gpuvalidator.html">GPUValidator</a>
     </nav>
     <a class="nav-cta" href="https://github.com/svbion/gpu-benchmark-lab" target="_blank" rel="noopener noreferrer" aria-label="Open the GPU Benchmark Lab repository on GitHub">GitHub</a>
   </header>
@@ -61,15 +63,15 @@
       <div class="hero-copy reveal">
         <p class="kicker">Launch Candidate · Enterprise AI Compute</p>
         <h1>Engineering an Enterprise GPU Benchmarking and Validation Environment</h1>
-        <p class="hero-lead">A public-safe case study in RunPod GPU infrastructure, NVIDIA A100 SXM validation, CUDA/NCCL benchmark methodology, evidence discipline, and executive reporting.</p>
+        <p class="hero-lead">A public-safe case study in RunPod GPU infrastructure, NVIDIA H200 SXM5 NV18 validation, CUDA/NCCL benchmark methodology, evidence discipline, and executive reporting.</p>
         <div class="hero-actions" aria-label="Primary actions">
-          <a class="button primary" href="docs/BENCHMARK_METHODOLOGY.md">Explore methodology</a>
-          <a class="button secondary" href="docs/releases/v1.0.0.md">Release notes</a>
+          <a class="button primary" href="benchmarks/index.html">Browse results</a>
+          <a class="button secondary" href="docs/lessons/05-watch-nccl-choose-topology.md">Learn NCCL topology</a>
         </div>
         <dl class="hero-metrics" aria-label="Project highlights">
-          <div><dt>GPU Class</dt><dd>A100 SXM</dd></div>
-          <div><dt>Runtime Evidence</dt><dd>CUDA / NCCL</dd></div>
-          <div><dt>Release</dt><dd>v1.0.0 LC1</dd></div>
+          <div><dt>GPU Class</dt><dd>H200 SXM5</dd></div>
+          <div><dt>Fabric Evidence</dt><dd>NV18 / P2P OK</dd></div>
+          <div><dt>Release</dt><dd>0.1 H200</dd></div>
         </dl>
       </div>
       <div class="hero-visual reveal" aria-label="GPU validation system visual">
@@ -118,7 +120,7 @@
     <section id="hardware" class="section-shell">
       <div class="section-heading reveal">
         <p class="kicker">Hardware</p>
-        <h2>NVIDIA A100 SXM class evidence, stated with limitations.</h2>
+        <h2>NVIDIA H200 SXM5 class evidence, stated with limitations.</h2>
       </div>
       <div class="spec-grid reveal" aria-label="Hardware and runtime evidence summary">
         <div><span>Provider</span><strong>RunPod</strong></div>
