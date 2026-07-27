@@ -20,7 +20,7 @@
 | [Benchmark lab overview](../assets/public/benchmark-lab-overview.svg) | Lab-to-report workflow |
 | [Evidence to report](../assets/public/evidence-to-report.svg) | Technical evidence to executive documentation |
 | [GPUValidator boundary](../assets/public/gpuvalidator-boundary.svg) | Proprietary boundary |
-| [Professional photo placeholder](../assets/public/profile-placeholder.svg) | Portfolio photo placeholder |
+| [Sabion Frazier headshot](../assets/public/sabion-frazier-headshot.jpeg) | Professional homepage profile photo |
 
 ## Screenshot Policy
 
